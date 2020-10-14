@@ -22,7 +22,7 @@ header {
 }
 
 .logo-container i {
-    margin: 7px 5px 0px 40px;
+    margin: auto 5px auto 40px;
 }
 
 nav {
@@ -104,8 +104,10 @@ main {
 
 @media screen and (max-width: 1024px) {
     .about {
+        margin: 10px auto;
         flex-direction: column;
         padding: 24px;
+        height: auto;
     }
     .profile img {
         width: 40%;
@@ -114,10 +116,27 @@ main {
     nav {
         flex: 2;
     }
+    .about-text h1 {
+        font-size: 28px;
+    }
+    .about-text p {
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 576px) {
+    main {
+        height: auto;
+    }
+    .logo-container i {
+        margin: auto 5px auto 10px;
+    }
     .logo-container h1 {
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .nav-links li a {
+        font-size: 16px;
     }
 }
