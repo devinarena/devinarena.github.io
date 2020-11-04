@@ -12,7 +12,8 @@ header {
     display: flex;
     width: 100%;
     color: white;
-    height: 10vh;
+    min-height: 10vh;
+    height: auto;
     align-items: center;
 }
 
@@ -217,7 +218,7 @@ main {
 
 .contact-header {
     text-align: center;
-    margin: 0 5px 50px 10px;
+    margin: 0 5px 40px 10px;
 }
 
 .contact-header h1 {
@@ -305,6 +306,8 @@ main {
     .projects-section ul li a p {
         font-size: 16px;
     }
+
+    .contact-container
 }
 
 @media screen and (max-width: 576px) {
