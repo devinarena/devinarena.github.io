@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
+        <link rel="icon" href="./image/favicon.ico">
         <title>Devin Arena</title>
     </head>
     <body>
@@ -16,22 +17,76 @@
             </div>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <div class="about">
-                <div class="profile">
-                    <img src="./image/P1220097.jpg" />
+            <a name="about" class="location-ref"></a>
+            <div class="about-section">
+                <div class="about-container">
+                    <div class="profile">
+                        <img src="./image/P1220097.jpg" />
+                    </div>
+                    <div class="about-text">
+                        <h1>About Me</h1>
+                        <p>My name is Devin Arena and I am a sophomore studying Software Engineering at Florida Gulf Coast University. I am fluent in C++, Java, C# and Python and enjoy writing useful apps and fun games.</p>
+                        <p>You can find some of my side projects below as well as some contact info.</p>
+                    </div>
                 </div>
-                <div class="about-text">
-                    <h1>About Me</h1>
-                    <p>My name is Devin Arena and I am a sophomore studying Software Engineering at Florida Gulf Coast University. I am fluent in C++, Java, C# and Python and enjoy writing useful apps and fun games.</p>
-                    <p>You can find some of my side projects below as well as some contact info.</p>
+            </div>
+            <a name="projects" class="location-ref"></a>
+            <div class="projects-section">
+                <div class="projects-container">
+                    <h1>Projects</h1>
+                    <h4>Most of my projects can be found on my <a href="https://www.github.com/devinarena">GitHub</a>.</h4>
+                    <h4>Here are some of the ones I'm most proud of:</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/devinarena/MinesweeperAI">
+                                <img src="image/minesweeperai.png" width="128" height="128" />
+                                <div class="projects-item-text">
+                                    <h3>Minesweeper AI (JavaScript)</h3>
+                                    <p>An AI that plays a custom programmed version of MineSweeper in the browser. The AI solves the board using a probability map and has a high success rate once even a small area is uncovered.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/devinarena/TicTacToeAI">
+                                <img src="image/tictactoeai.png" width="128" height="128" />
+                                <div class="projects-item-text">
+                                    <h3>Tic-Tac-Toe AI (JavaScript)</h3>
+                                    <p>An AI that plays the user in Tic-Tac-Toe in the browser. The AI uses the minimax algorithm to determine which move is best and almost never loses.</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/devinarena/ASCIIFireworks">
+                                <img src="image/asciifireworks.png" width="128" height="128" />
+                                <div class="projects-item-text">
+                                    <h3>ASCII Fireworks (C++)</h3>
+                                    <p>A simple ASCII animation that displays fireworks in the console, modeled by different ASCII characters complete with animations. Written in one day using pure C++ and the Win32 API. </p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <a name="contact" class="location-ref"></a>
+            <div class="contact-section">
+                <div class="contact-container">
+                    <div class="contact-header">
+                        <h1>Contact</h1>
+                        <h2>Ways to contact me and other links.</h2>
+                    </div>
+                    <div class="contact-info">
+                        <a href="https://github.com/devinarena"><i class="fab fa-github fa-2x"></i><h3>GitHub</h3></a>
+                        <a href="https://www.linkedin.com/in/devin-arena-640b7b188/"><i class="fab fa-linkedin fa-2x"></i><h3>LinkedIn</h3></a>
+                        <a href="mailto:djarena3577@eagle.fgcu.edu"><i class="fas fa-envelope-square fa-2x"></i><h3>Email</h3></a>
+                    </div>
                 </div>
             </div>
         </main>
