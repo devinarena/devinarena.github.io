@@ -254,6 +254,62 @@ main {
     margin: 0 20px;
 }
 
+.bottomProgressBar {
+    position: fixed;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    width: 100%;
+    background: black;
+    border-radius: 10px;
+    opacity: calc(var(--time) * 100%);
+}
+
+.bottomProgressBar .barLabels {
+    position: fixed;
+    width: 100%;
+    bottom: 100%;
+}
+
+.bottomProgressBar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.bottomProgressBar .barLabels ul li {
+    display: inline;
+    font-size: calc((0.6 + (var(--time) / 2)) * 1.8em);
+}
+
+.bottomProgressBar .barLabels ul li a {
+    color: #AEB6BF;
+    text-decoration: none;
+    transition: color 1.5s ease;
+    -webkit-transition: color 1.5s ease;
+    -moz-webkit-transition: color 1.5s ease;
+    -o-transition: color 1.5s ease;
+}
+
+.bottomProgressBar .barLabels ul li a:hover {
+    color: white;
+}
+
+.bottomProgressBar .bar {
+    background: linear-gradient(0deg, rgba(93,109,126,1) 0%, rgba(52,73,94,1) 33%, rgba(40,55,71,1) 66%);
+    background: -webkit-linear-gradient(0deg, rgba(93,109,126,1) 0%, rgba(52,73,94,1) 33%, rgba(40,55,71,1) 66%);
+    background: -moz-linear-gradient(0deg, rgba(93,109,126,1) 0%, rgba(52,73,94,1) 33%, rgba(40,55,71,1) 66%);
+    background: -o-linear-gradient(0deg, rgba(93,109,126,1) 0%, rgba(52,73,94,1) 33%, rgba(40,55,71,1) 66%);
+    margin: 2px;
+    width: calc(var(--scroll) * 100%);
+    min-height: 6px;
+    height: calc(var(--time) * 20px);
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 1024px) {
     .about-section {
         height: auto;
@@ -306,8 +362,6 @@ main {
     .projects-section ul li a p {
         font-size: 16px;
     }
-
-    .contact-container
 }
 
 @media screen and (max-width: 576px) {
