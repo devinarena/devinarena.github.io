@@ -4,6 +4,10 @@
     --lightgreen: #566F54; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #566F54;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
