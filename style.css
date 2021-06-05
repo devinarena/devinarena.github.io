@@ -35,17 +35,17 @@ body {
 }
 
 .background-layer1 {
-    background-image: url("/media/layer3.png");
+    background-image: url("./media/layer3.png");
     animation: slide 45s linear infinite;
 }
 
 .background-layer2 {
-    background-image: url("/media/layer2.png");
+    background-image: url("./media/layer2.png");
     animation: slide 30s linear infinite;
 }
 
 .background-layer3 {
-    background-image: url("/media/layer1.png");
+    background-image: url("./media/layer1.png");
     animation: slide 20s linear infinite;
 }
 
@@ -144,19 +144,23 @@ body {
     margin-right: 20px;
 }
 
-.telegram-counter {
+.project-container {
     flex-direction: column;
 }
 
-.telegram-counter-text {
-    margin-top: 5%;
+.telegram-counter-text, .ascii-shooter-text {
+    margin-top: 3%;
     width: 85%;
 }
 
-.telegram-counter img {
+.telegram-counter img, .ascii-shooter img {
     width: 75%;
     border: 3px solid var(--darkgreen);
     border-radius: 20px;
+}
+
+.project-container h1 {
+    font-size: 24px;
 }
 
 @keyframes slide {
