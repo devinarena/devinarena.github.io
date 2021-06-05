@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    --lightgreen: #566F54; 
+    --lightgreen: #89AF85;
+    --darkgreen: #1B3427;
+    --link-color: #B2E0AC;
+    --link-color-hover: #DDFFD8;
+    --opague: rgba(255, 255, 255, 0.25);
 }
 
 html {
@@ -26,22 +30,22 @@ body {
     min-width: 3840px;
     height: 100vh;
     background-repeat: repeat-x;
-    background-position-y: calc(var(--scroll) * 100%);
     image-rendering: pixelated;
+    background-position-y: calc(var(--scroll) * 100%);
 }
 
 .background-layer1 {
-    background-image: url("/img/layer3.png");
+    background-image: url("/media/layer3.png");
     animation: slide 45s linear infinite;
 }
 
 .background-layer2 {
-    background-image: url("/img/layer2.png");
+    background-image: url("/media/layer2.png");
     animation: slide 30s linear infinite;
 }
 
 .background-layer3 {
-    background-image: url("/img/layer1.png");
+    background-image: url("/media/layer1.png");
     animation: slide 20s linear infinite;
 }
 
@@ -56,21 +60,45 @@ body {
 .container {
     position: absolute;
     width: 70%;
-    height: 80%;
+    min-height: 80%;
     max-height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.25);
+    background: var(--opague);
     color: #fff;
     padding: 20px;
     border-radius: 25px;
 }
 
+.container h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.container p {
+    font-size: 22px;
+}
+
+.container a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    padding: 8px;
+}
+
+.container a:hover {
+    background: var(--opague);
+    color: var(--link-color-hover);
+}
+
 .about-container img {
     width: 25%;
     margin: auto;
-    border: 3px solid #031A15;
+    border: 3px solid var(--darkgreen);
     border-radius: 20px;
 }
 
@@ -84,21 +112,15 @@ body {
     align-items: center;
 }
 
-.container h1 {
-    text-align: center;
-    font-size: 48px;
-}
-
-.about-text p {
-    font-size: 22px;
-}
-
 .contact-container {
     flex-direction: column;
+    text-align: center;
 }
 
 .contact-container ul {
     list-style-type: none;
+    font-size: 28px;
+    margin-top: 3%;
 }
 
 .contact-container ul li a {
@@ -106,16 +128,35 @@ body {
     text-decoration: none;
     align-items: center;
     padding: 12px;
-    font-size: 32px;
-    color: #ccc;
+    color: var(--link-color);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
 }
 
 .contact-container ul li a:hover {
-    color: #B7EAB2;
+    color: var(--link-color-hover);
+    background: var(--opague);
 }
 
 .contact-container ul li a i {
     margin-right: 20px;
+}
+
+.telegram-counter {
+    flex-direction: column;
+}
+
+.telegram-counter-text {
+    margin-top: 5%;
+    width: 85%;
+}
+
+.telegram-counter img {
+    width: 75%;
+    border: 3px solid var(--darkgreen);
+    border-radius: 20px;
 }
 
 @keyframes slide {
@@ -133,6 +174,14 @@ body {
         flex-direction: column;
     }
 
+    .container h1 {
+        font-size: 36px;
+    }
+    
+    .container p {
+        font-size: 18px;
+    }
+
     .about-container img {
         width: 35%;
     }
@@ -141,18 +190,55 @@ body {
         width: 100%;
     }
 
-    .about-text h1 {
-        font-size: 36px;
+    .telegram-counter-text h1 {
+        font-size: 24px;
     }
-    
-    .about-text p {
-        font-size: 18px;
+
+    .telegram-counter-text p {
+        font-size: 16px;
     }
 }
 
 @media screen and (max-width: 576px) {
+
+    .background-layer1, .background-layer2, .background-layer3 {
+        animation: none;
+    }
+
     .container {
         flex-direction: column;
         height: auto;
     }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+
+    .background-layer1, .background-layer2, .background-layer3 {
+        animation: none;
+    }
+
+    .about-container {
+        flex-direction: row;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .about-container img {
+        width: 20%;
+    }
+
+    .contact-container ul {
+        font-size: 20px;
+    }
+
+    .contact-container ul li a {
+        padding: 5px;
+    }
+
 }
