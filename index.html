@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./style.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="icon" href="./media/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
        <title>Devin Arena</title>
     </head>
@@ -14,7 +15,18 @@
             <div class="background-layer2"></div>
             <div class="background-layer3"></div>
         </div>
-        <div class="section">
+        <div class="section" id="home">
+            <div class="landing">
+                <h1>Devin Arena</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#telegramcounter">Telegram Message Counter</a></li>
+                    <li><a href="#asciishooter">ASCII Shooter</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="section" id="about">
             <div class="container about-container">
                 <img src="./media/P1220097.jpg">
                 <div class="about-text">
@@ -23,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="telegramcounter">
             <div class="container project-container telegram-counter">
                 <img src="./media/telegramcounter.png">
                 <div class="telegram-counter-text">
@@ -32,7 +44,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="asciishooter">
             <div class="container project-container ascii-shooter">
                 <img src="./media/asciishooter.png">
                 <div class="ascii-shooter-text">
@@ -41,7 +53,7 @@
                 </div>
             </div>
         </div>
-        <div class="section">
+        <div class="section" id="contact">
             <div class="container contact-container">
                 <h1>Contact</h1>
                 <p>My contact information and other links.</p>
@@ -52,6 +64,9 @@
                     <li><a href="mailto:djarena3577@eagle.fgcu.edu"><i class="fas fa-envelope-square fa-2x"></i><h3>Email</h3></a></li>
                 </ul>
             </div>
+        </div>
+        <div class="home-button">
+            <a href="#home"><i class="fas fa-arrow-alt-circle-up fa-4x"></i></a>
         </div>
         <script type="text/javascript" src="./handler.js"></script>
     </body>

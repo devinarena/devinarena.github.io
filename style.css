@@ -15,6 +15,7 @@ html {
 body {
     background-color: #566F54;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 22px;
 }
 
 .background-container {
@@ -69,15 +70,19 @@ body {
     color: #fff;
     padding: 20px;
     border-radius: 25px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.container:hover {
+    background: rgba(80, 80, 80, 0.9);
 }
 
 .container h1 {
     text-align: center;
     font-size: 48px;
-}
-
-.container p {
-    font-size: 22px;
 }
 
 .container a {
@@ -93,6 +98,51 @@ body {
 .container a:hover {
     background: var(--opague);
     color: var(--link-color-hover);
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing h1 {
+    color: white;
+    font-size: 6em;
+    font-weight: bold;
+    opacity: 0.65;
+}
+
+.landing ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.landing ul li {
+    margin: 8px 8px;
+}
+
+.landing ul li a {
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.6;
+    font-size: 1.5em;
+    padding: 8px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.landing ul li a:hover {
+    color: var(--link-color);
+    opacity: 1;
+    background:rgba(255, 255, 255, 0.25);
 }
 
 .about-container img {
@@ -148,6 +198,10 @@ body {
     flex-direction: column;
 }
 
+.project-container h1 {
+    font-size: 24px;
+}
+
 .telegram-counter-text, .ascii-shooter-text {
     margin-top: 3%;
     width: 85%;
@@ -159,8 +213,23 @@ body {
     border-radius: 20px;
 }
 
-.project-container h1 {
-    font-size: 24px;
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.home-button a {
+    color: #fff;
+    opacity: 0;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.home-button a:hover {
+    opacity: 1;
 }
 
 @keyframes slide {
@@ -173,6 +242,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+
+    .landing h1 {
+        font-size: 3em;
+    }
+
+    .landing ul {
+        flex-direction: column;
+    }
 
     .container {
         flex-direction: column;
@@ -213,6 +290,10 @@ body {
         flex-direction: column;
         width: 80%;
         height: auto;
+    }
+
+    .landing h1 {
+        font-size: 2em;
     }
 }
 
