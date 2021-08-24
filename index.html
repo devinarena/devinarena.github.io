@@ -1,73 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="./style.css" />
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-        <link rel="icon" href="./media/favicon.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-       <title>Devin Arena</title>
-    </head>
-    <body>
-        <div class="background-container">
-            <div class="background-layer1"></div>
-            <div class="background-layer2"></div>
-            <div class="background-layer3"></div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="icon" href="./media/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Devin Arena</title>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="background-layer1"></div>
+        <div class="background-layer2"></div>
+        <div class="background-layer3"></div>
+    </div>
+    <div class="section" id="home">
+        <div class="landing">
+            <h1>Devin Arena</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#productlog">Product Log</a></li>
+                <li><a href="#pixelstriker">Pixel Striker</a></li>
+                <li><a href="#telegramcounter">Telegram Message Counter</a></li>
+                <li><a href="#asciishooter">ASCII Shooter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-        <div class="section" id="home">
-            <div class="landing">
-                <h1>Devin Arena</h1>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#telegramcounter">Telegram Message Counter</a></li>
-                    <li><a href="#asciishooter">ASCII Shooter</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+    </div>
+    <div class="section" id="about">
+        <div class="container about-container">
+            <img src="./media/20210722_191537.jpg">
+            <div class="about-text">
+                <h1>About Me</h1>
+                <p>My name is Devin Arena and I am from Naples, Frorida. I am currently a software engineering student at Florida Gulf Coast University. My hobbies include programming, designing games, tinkering with computers, playing the piano, and writing
+                    music. You can find some of my projects and ways to contact me below. In regards to programming, my interests lie in backend design and development.</p>
             </div>
         </div>
-        <div class="section" id="about">
-            <div class="container about-container">
-                <img src="./media/P1220097.jpg">
-                <div class="about-text">
-                    <h1>About Me</h1>
-                    <p>I am currently a software engineering student at Florida Gulf Coast University. I love programming, designing games, tinkering with computers, playing the piano, and writing music. You can find some of my projects and ways to contact me below. In regards to programming, my interests lie in backend design and development.</p>
-                </div>
+    </div>
+    <div class="section" id="productlog">
+        <div class="container project-container product-log">
+            <img src="./media/productlog.png">
+            <div class="project-text">
+                <h1><a href="https://github.com/devinarena/ProductLog">Product Log</a></h1>
+                <p>A cross-platform mobile utility developed using the flutter SDK. Allows users to document their purchases by either entering a UPC, scanning a barcode, or simply adding the product dynamically. Product information is stored in a local
+                    SQLite database and can be looked up, searched by name or tag, and sorted. Stored information includes UPC, picture, name, manufacturer, description, price, quantity, etc.
+                </p>
             </div>
         </div>
-        <div class="section" id="telegramcounter">
-            <div class="container project-container telegram-counter">
-                <img src="./media/telegramcounter.png">
-                <div class="telegram-counter-text">
-                    <h1><a href="https://github.com/devinarena/TelegramCounter">Telegram Message Counter</a></h1>
-                    <p>A powerfully simple program written in Python to analyze texting trends. The software utilizes BeautifulSoup to scrape webpages generated by the Telegram Desktop App to collect data. It then displays this data using tkinter and matplotlib as barplots or line plots. It was originally written as a fun side project to analyze texting trends with my girlfriend.</p>
-                </div>
+    </div>
+    <div class="section" id="pixelstriker">
+        <div class="container project-container pixel-striker">
+            <img src="./media/pixelstriker.png">
+            <div class="project-text">
+                <h1><a href="https://github.com/devinarena/Pixel-Striker">Pixel Striker</a></h1>
+                <p>A mobile game written in the Godot game engine. Based around my love for soccer, play through three different game modes, free kicks, penalties, and goalie mode. In free kicks and penalties, you attempt to shoot the ball and score against
+                    an AI goalie. In goalie mode, you attempt to save the ball through swiping on the touchscreen. Google Play Games Services is integrated, granting 6 unique achievements and 3 unique leaderboards to compete on!</p>
             </div>
         </div>
-        <div class="section" id="asciishooter">
-            <div class="container project-container ascii-shooter">
-                <img src="./media/asciishooter.png">
-                <div class="ascii-shooter-text">
-                    <h1><a href="https://github.com/devinarena/ASCII-Shooter">ASCII Shooter</a></h1>
-                    <p>A small, fun game written in C++ that runs completely in the command line interface. Fight 6 different kinds of enemies and a final boss in a shooter game that utilizes ASCII characters for sprites. Developed using C++ and the Windows API.</p>
-                </div>
+    </div>
+    <div class="section" id="telegramcounter">
+        <div class="container project-container telegram-counter">
+            <img src="./media/telegramcounter.png">
+            <div class="project-text">
+                <h1><a href="https://github.com/devinarena/TelegramCounter">Telegram Message Counter</a></h1>
+                <p>A powerfully simple program written in Python to analyze texting trends. The software utilizes BeautifulSoup to scrape webpages generated by the Telegram Desktop App to collect data. It then displays this data using tkinter and matplotlib
+                    as barplots or line plots. It was originally written as a fun side project to analyze texting trends with my girlfriend.</p>
             </div>
         </div>
-        <div class="section" id="contact">
-            <div class="container contact-container">
-                <h1>Contact</h1>
-                <p>My contact information and other links.</p>
-                <ul>
-                    <li><a href="./media/Resume.pdf"><i class="far fa-file fa-2x"></i><h3>Resume</h3></a></li>
-                    <li><a href="https://github.com/devinarena"><i class="fab fa-github fa-2x"></i><h3>GitHub</h3></a></li>
-                    <li><a href="https://www.linkedin.com/in/devin-arena-640b7b188/"><i class="fab fa-linkedin fa-2x"></i><h3>LinkedIn</h3></a></li>
-                    <li><a href="mailto:djarena3577@eagle.fgcu.edu"><i class="fas fa-envelope-square fa-2x"></i><h3>Email</h3></a></li>
-                </ul>
+    </div>
+    <div class="section" id="asciishooter">
+        <div class="container project-container ascii-shooter">
+            <img src="./media/asciishooter.png">
+            <div class="project-text">
+                <h1><a href="https://github.com/devinarena/ASCII-Shooter">ASCII Shooter</a></h1>
+                <p>A small, fun game written in C++ that runs completely in the command line interface. Fight 6 different kinds of enemies and a final boss in a shooter game that utilizes ASCII characters for sprites. Developed using C++ and the Windows
+                    API.
+                </p>
             </div>
         </div>
-        <div class="home-button">
-            <a href="#home"><i class="fas fa-arrow-alt-circle-up fa-4x"></i></a>
+    </div>
+    <div class="section" id="contact">
+        <div class="container contact-container">
+            <h1>Contact</h1>
+            <p>My contact information and other links.</p>
+            <ul>
+                <li><a href="./media/Resume.pdf"><i class="far fa-file fa-2x"></i>
+                        <h3>Resume</h3>
+                    </a></li>
+                <li><a href="https://github.com/devinarena"><i class="fab fa-github fa-2x"></i>
+                        <h3>GitHub</h3>
+                    </a></li>
+                <li><a href="https://www.linkedin.com/in/devin-arena-640b7b188/"><i class="fab fa-linkedin fa-2x"></i>
+                        <h3>LinkedIn</h3>
+                    </a></li>
+                <li><a href="mailto:djarena3577@eagle.fgcu.edu"><i class="fas fa-envelope-square fa-2x"></i>
+                        <h3>Email</h3>
+                    </a></li>
+            </ul>
         </div>
-        <script type="text/javascript" src="./handler.js"></script>
-    </body>
+    </div>
+    <div class="home-button">
+        <a href="#home"><i class="fas fa-arrow-alt-circle-up fa-4x"></i></a>
+    </div>
+    <script type="text/javascript" src="./handler.js"></script>
+</body>
+
 </html>
