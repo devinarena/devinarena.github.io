@@ -126,7 +126,7 @@ body {
 }
 
 .landing ul li {
-    margin: 8px 8px;
+    margin: 8px 16px;
 }
 
 .landing ul li a {
@@ -205,6 +205,10 @@ body {
 }
 
 .project-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 3%;
     width: 85%;
 }
@@ -212,10 +216,17 @@ body {
 .telegram-counter img,
 .ascii-shooter img,
 .pixel-striker img,
-.product-log img {
+.product-log img,
+.minesweeperai img,
+.apptracker img {
     width: 50%;
     border: 3px solid var(--darkgreen);
     border-radius: 20px;
+}
+
+.apptracker img {
+    width: 40%;
+    margin-right: 5%;
 }
 
 .product-log {
@@ -281,20 +292,26 @@ body {
     .about-text {
         width: 100%;
     }
-    .telegram-counter-text h1 {
-        font-size: 24px;
+    .project-text h1 {
+        font-size: 6vw;
     }
-    .telegram-counter-text p {
-        font-size: 16px;
+    .project-text p {
+        font-size: 3vw;
     }
     .product-log {
         flex-direction: row;
     }
-    .product-log .project-text p {
-        font-size: 16px;
+    .apptracker {
+        flex-direction: row;
+    }
+    .apptracker img {
+        content: url("./media/apptracker-mobile.png");
+    }
+    .apptracker p {
+        font-size: 2.75vw;
     }
     .contact-container ul, .landing ul li a {
-        font-size: 1.25em;
+        font-size: 6vw;
     }
 }
 
@@ -310,10 +327,13 @@ body {
         height: auto;
     }
     .landing h1 {
-        font-size: 2em;
+        font-size: 10vw;
     }
     .product-log .project-text {
         width: 85%;
+    }
+    .apptracker {
+        flex-direction: row;
     }
 }
 

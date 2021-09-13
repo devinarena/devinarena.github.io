@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="icon" href="./media/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <title>Devin Arena</title>
@@ -22,8 +23,12 @@
             <h1>Devin Arena</h1>
             <ul>
                 <li><a href="#about">About</a></li>
+                <li><a href="#apptracker">AppTracker</a></li>
                 <li><a href="#productlog">Product Log</a></li>
                 <li><a href="#pixelstriker">Pixel Striker</a></li>
+            </ul>
+            <ul>
+                <li><a href="#minesweeperai">Minesweeper AI</a></li>
                 <li><a href="#telegramcounter">Telegram Counter</a></li>
                 <li><a href="#asciishooter">ASCII Shooter</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -35,8 +40,25 @@
             <img src="./media/20210722_191537.jpg">
             <div class="about-text">
                 <h1>About Me</h1>
-                <p>I am currently a software engineering student at Florida Gulf Coast University. I love programming, designing games, tinkering with computers, playing the piano, and writing music. You can find some of my projects and ways to contact me
+                <p>I am currently a software engineering student at Florida Gulf Coast University. I love programming,
+                    designing games, tinkering with computers, playing the piano, and writing music. You can find some
+                    of my projects and ways to contact me
                     below. In regards to programming, my interests lie in backend design and development.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="apptracker">
+        <div class="container project-container apptracker">
+            <img src="./media/apptracker-desktop.png">
+            <div class="project-text">
+                <h1><a href="https://github.com/devinarena/AppTracker">App Tracker</a></h1>
+                <p>A web application developed using React allowing users to catalog internship and job applications.
+                    Users can add applications by entering company/position name and any notes, then pressing 'Add Application'.
+                    Also stores number of interviews, if an offer was received, if a rejection was given and date of application.
+                    Has support for light and dark themes, exporting and importing applications, tracking application list statistics,
+                    and editing application entries. Sleek and responsive design using CSS3 and support for multiple devices using media queries.
+                </p>
+                <a href="https://devinarena.github.io/AppTracker">Try It</a>
             </div>
         </div>
     </div>
@@ -45,8 +67,11 @@
             <img src="./media/productlog.png">
             <div class="project-text">
                 <h1><a href="https://github.com/devinarena/ProductLog">Product Log</a></h1>
-                <p>A cross-platform mobile utility developed using the flutter SDK. Allows users to document their purchases by either entering a UPC, scanning a barcode, or simply adding the product dynamically. Product information is stored in a local
-                    SQLite database and can be looked up, searched by name or tag, and sorted. Stored information includes UPC, picture, name, manufacturer, description, price, quantity, etc.
+                <p>A cross-platform mobile utility developed using the flutter SDK. Allows users to document their
+                    purchases by either entering a UPC, scanning a barcode, or simply adding the product dynamically.
+                    Product information is stored in a local
+                    SQLite database and can be looked up, searched by name or tag, and sorted. Stored information
+                    includes UPC, picture, name, manufacturer, description, price, quantity, etc.
                 </p>
             </div>
         </div>
@@ -56,8 +81,25 @@
             <img src="./media/pixelstriker.png">
             <div class="project-text">
                 <h1><a href="https://github.com/devinarena/Pixel-Striker">Pixel Striker</a></h1>
-                <p>A mobile game written in the Godot game engine. Based around my love for soccer, play through three different game modes, free kicks, penalties, and goalie mode. In free kicks and penalties, you attempt to shoot the ball and score against
-                    an AI goalie. In goalie mode, you attempt to save the ball through swiping on the touchscreen. Google Play Games Services is integrated, granting 6 unique achievements and 3 unique leaderboards to compete on!</p>
+                <p>A mobile game written in the Godot game engine. Based around my love for soccer, play through three
+                    different game modes, free kicks, penalties, and goalie mode. In free kicks and penalties, you
+                    attempt to shoot the ball and score against
+                    an AI goalie. In goalie mode, you attempt to save the ball through swiping on the touchscreen.
+                    Google Play Games Services is integrated, granting 6 unique achievements and 3 unique leaderboards
+                    to compete on!</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="minesweeperai">
+        <div class="container project-container minesweeperai">
+            <img src="./media/minesweeperai.png">
+            <div class="project-text">
+                <h1><a href="https://github.com/devinarena/MinesweeperAI">Minesweeper AI</a></h1>
+                <p>My version of a minesweeper game written in vanilla javascript with a built in AI solver.
+                    The AI uses a probability map to determine which tiles are mines and which tiles
+                    are not. The AI works very well until the puzzles become very difficult (>90 mines).
+                </p>
+                <a href="https://devinarena.github.io/MinesweeperAI">Try It</a>
             </div>
         </div>
     </div>
@@ -67,8 +109,11 @@
             <div class="project-text">
                 <h1><a href="https://github.com/devinarena/TelegramCounter">Telegram Message Counter</a>
                 </h1>
-                <p>A powerfully simple program written in Python to analyze texting trends. The software utilizes BeautifulSoup to scrape webpages generated by the Telegram Desktop App to collect data. It then displays this data using tkinter and matplotlib
-                    as barplots or line plots. It was originally written as a fun side project to analyze texting trends with my girlfriend.</p>
+                <p>A powerfully simple program written in Python to analyze texting trends. The software utilizes
+                    BeautifulSoup to scrape webpages generated by the Telegram Desktop App to collect data. It then
+                    displays this data using tkinter and matplotlib
+                    as barplots or line plots. It was originally written as a fun side project to analyze texting trends
+                    with my girlfriend.</p>
             </div>
         </div>
     </div>
@@ -77,8 +122,9 @@
             <img src="./media/asciishooter.png">
             <div class="project-text">
                 <h1><a href="https://github.com/devinarena/ASCII-Shooter">ASCII Shooter</a></h1>
-                <p>A small, fun game written in C++ that runs completely in the command line interface. Fight 6 different kinds of enemies and a final boss in a shooter game that utilizes ASCII characters for sprites. Developed using C++ and the Windows
-                    API.
+                <p>A small, fun game written in C++ that runs completely in the command line interface. Fight 6
+                    different kinds of enemies and a final boss in a shooter game that utilizes ASCII characters for
+                    sprites. Developed using C++ and the Windows API.
                 </p>
             </div>
         </div>
