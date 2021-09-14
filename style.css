@@ -210,7 +210,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 3%;
-    width: 85%;
+    width: 95%;
 }
 
 .telegram-counter img,
@@ -219,14 +219,9 @@ body {
 .product-log img,
 .minesweeperai img,
 .apptracker img {
-    width: 50%;
+    width: 60%;
     border: 3px solid var(--darkgreen);
     border-radius: 20px;
-}
-
-.apptracker img {
-    width: 40%;
-    margin-right: 5%;
 }
 
 .product-log {
@@ -272,7 +267,7 @@ body {
 
 @media screen and (max-width: 768px) {
     .landing h1 {
-        font-size: 3em;
+        font-size: 8vw;
     }
     .landing ul {
         flex-direction: column;
@@ -280,22 +275,23 @@ body {
     .container {
         flex-direction: column;
     }
-    .container h1 {
-        font-size: 36px;
-    }
-    .container p {
-        font-size: 18px;
-    }
-    .about-container img {
+    .about-container img, .apptracker img {
         width: 35%;
+    }
+    .product-log img {
+        width: 55%;
     }
     .about-text {
         width: 100%;
     }
-    .project-text h1 {
-        font-size: 6vw;
+    .project-text h1, .about-text h1 {
+        font-size: 5vw;
+        color: #fff;
     }
-    .project-text p {
+    .project-text p, .about-text p {
+        font-size: 3vw;
+    }
+    .apptracker .project-text p {
         font-size: 3vw;
     }
     .product-log {
@@ -306,9 +302,7 @@ body {
     }
     .apptracker img {
         content: url("./media/apptracker-mobile.png");
-    }
-    .apptracker p {
-        font-size: 2.75vw;
+        margin-right: 5%;
     }
     .contact-container ul, .landing ul li a {
         font-size: 6vw;
@@ -323,17 +317,39 @@ body {
     }
     .container {
         flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
         width: 80%;
         height: auto;
+    }
+    .contact-container {
+        justify-content: center;
     }
     .landing h1 {
         font-size: 10vw;
     }
     .product-log .project-text {
-        width: 85%;
+        width: 95%;
     }
-    .apptracker {
-        flex-direction: row;
+    .project-text h1, .about-text h1 {
+        font-size: 7vw;
+        color: #fff;
+    }
+    .project-text p, .about-text p {
+        font-size: 4vw;
+    }
+    .apptracker .project-text p {
+        font-size: 3.5vw;
+    }
+    .telegram-counter img,
+    .ascii-shooter img,
+    .pixel-striker img,
+    .minesweeperai img {
+        width: 70%;
+    }
+    .about-container img,
+    .apptracker img {
+        width: 40%;
     }
 }
 
@@ -346,14 +362,8 @@ body {
     .about-container {
         flex-direction: row;
     }
-    .container h1 {
-        font-size: 28px;
-    }
-    .container p {
-        font-size: 14px;
-    }
     .about-container img {
-        width: 20%;
+        width: 35%;
     }
     .contact-container ul {
         font-size: 20px;
