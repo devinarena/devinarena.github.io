@@ -224,6 +224,10 @@ body {
     border-radius: 20px;
 }
 
+.minesweeperai img {
+    width: 50%;
+}
+
 .product-log {
     flex-direction: row;
 }
