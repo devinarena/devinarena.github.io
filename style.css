@@ -218,7 +218,8 @@ body {
 .pixel-striker img,
 .product-log img,
 .minesweeperai img,
-.apptracker img {
+.apptracker img,
+.useroux img {
     width: 60%;
     border: 3px solid var(--darkgreen);
     border-radius: 20px;
@@ -310,6 +311,9 @@ body {
     }
     .contact-container ul, .landing ul li a {
         font-size: 6vw;
+    }
+    .useroux img {
+        width: 80%;
     }
 }
 
