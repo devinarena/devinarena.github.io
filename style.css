@@ -66,16 +66,17 @@ body {
     min-height: 90%;
     max-height: 95vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     background: var(--opague);
     color: #fff;
-    padding: 20px;
+    padding: 1%;
     border-radius: 25px;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
     -moz-webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
+    overflow: hidden;
 }
 
 .container:hover {
@@ -87,21 +88,6 @@ body {
     font-size: 48px;
 }
 
-.container a {
-    text-decoration: none;
-    color: var(--link-color);
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    padding: 8px;
-}
-
-.container a:hover {
-    background: var(--opague);
-    color: var(--link-color-hover);
-}
-
 .landing {
     display: flex;
     flex-direction: column;
@@ -111,7 +97,7 @@ body {
 
 .landing h1 {
     color: white;
-    font-size: 6em;
+    font-size: 6vw;
     font-weight: bold;
     opacity: 0.65;
 }
@@ -126,15 +112,16 @@ body {
 }
 
 .landing ul li {
-    margin: 8px 16px;
+    margin: 1% 2%;
 }
 
 .landing ul li a {
     text-decoration: none;
+    white-space: nowrap;
     color: #fff;
     opacity: 0.6;
+    padding: 0 2%;
     font-size: 2vw;
-    padding: 0 8px;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
     -moz-webkit-transition: all 1s ease;
@@ -145,13 +132,6 @@ body {
     color: var(--link-color);
     opacity: 1;
     background: rgba(255, 255, 255, 0.25);
-}
-
-.about-container img {
-    width: 25%;
-    margin: auto;
-    border: 3px solid var(--darkgreen);
-    border-radius: 20px;
 }
 
 .about-text {
@@ -165,6 +145,7 @@ body {
 }
 
 .contact-container {
+    justify-content: center;
     flex-direction: column;
     text-align: center;
 }
@@ -200,8 +181,8 @@ body {
     flex-direction: column;
 }
 
-.project-container h1 {
-    font-size: 36px;
+.project-container h1, .contact-container h1 {
+    font-size: 2.5vw;
 }
 
 .project-text {
@@ -213,6 +194,26 @@ body {
     width: 95%;
 }
 
+.about-text p, .project-text p, .contact-container p {
+    font-size: 1.75vw;
+}
+
+.project-text a {
+    text-decoration: none;
+    color: var(--link-color);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    padding: 8px;
+}
+
+.project-text a:hover {
+    background: var(--opague);
+    color: var(--link-color-hover);
+}
+
+.about-container img,
 .telegram-counter img,
 .ascii-shooter img,
 .pixel-striker img,
@@ -220,13 +221,18 @@ body {
 .minesweeperai img,
 .apptracker img,
 .useroux img {
-    width: 60%;
+    object-fit: contain;
+    max-width: 60%;
     border: 3px solid var(--darkgreen);
     border-radius: 20px;
 }
 
 .minesweeperai img {
-    width: 50%;
+    max-width: 50%;
+}
+
+.about-container img {
+    max-width: 30%;
 }
 
 .product-log {
@@ -242,13 +248,13 @@ body {
     width: 50%;
 }
 
-.home-button {
+.side-buttons {
     position: fixed;
     bottom: 20px;
     right: 20px;
 }
 
-.home-button a {
+.side-buttons a {
     color: #fff;
     opacity: 0;
     transition: all 1s ease;
@@ -257,7 +263,7 @@ body {
     -o-transition: all 1s ease;
 }
 
-.home-button a:hover {
+.side-buttons a:hover {
     opacity: 1;
 }
 
@@ -274,10 +280,7 @@ body {
     .landing h1 {
         font-size: 8vw;
     }
-    .landing ul {
-        flex-direction: column;
-    }
-    .container {
+    .landing ul, .container {
         flex-direction: column;
     }
     .about-container img, .apptracker img {
@@ -287,7 +290,7 @@ body {
         width: 55%;
     }
     .about-text {
-        width: 100%;
+        width: 95%;
     }
     .project-text h1, .about-text h1 {
         font-size: 5vw;
@@ -296,13 +299,7 @@ body {
     .project-text p, .about-text p {
         font-size: 3vw;
     }
-    .apptracker .project-text p {
-        font-size: 3vw;
-    }
-    .product-log {
-        flex-direction: row;
-    }
-    .apptracker {
+    .product-log, .apptracker{
         flex-direction: row;
     }
     .apptracker img {
@@ -315,19 +312,20 @@ body {
     .useroux img {
         width: 80%;
     }
+    .contact-container h1 {
+        font-size: 8vw;
+    }
+    .contact-container p, .contact-container ul li {
+        font-size: 5vw;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .background-layer1,
-    .background-layer2,
-    .background-layer3 {
-        animation: none;
-    }
     .container {
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
-        width: 80%;
+        width: 85%;
         height: auto;
     }
     .contact-container {
@@ -352,31 +350,49 @@ body {
     .telegram-counter img,
     .ascii-shooter img,
     .pixel-striker img,
-    .minesweeperai img {
-        width: 70%;
+    .product-log img,
+    .minesweeperai img,
+    .apptracker img,
+    .useroux img {
+        max-width: 80%;
     }
-    .about-container img,
-    .apptracker img {
-        width: 40%;
+    .about-container img {
+        max-width: 40%;
+    }
+    .contact-container p {
+        margin: 0 2%;
     }
 }
 
 @media screen and (max-width: 768px) and (orientation: landscape) {
-    .background-layer1,
-    .background-layer2,
-    .background-layer3 {
-        animation: none;
+    .about-text p, .project-text p {
+        font-size: 2vw;
     }
-    .about-container {
-        flex-direction: row;
+    .about-text h1, .project-text h1 {
+        font-size: 3vw;
+    }
+    .telegram-counter img,
+    .ascii-shooter img,
+    .pixel-striker img,
+    .product-log img,
+    .minesweeperai img,
+    .apptracker img,
+    .useroux img {
+        max-width: 45%;
     }
     .about-container img {
-        width: 35%;
+        max-width: 20%;
     }
-    .contact-container ul {
-        font-size: 20px;
+    .landing h1 {
+        font-size: 5.5vw;
     }
-    .contact-container ul li a {
-        padding: 5px;
+    .landing ul li a {
+        font-size: 3.5vw;
+    }
+    .contact-container h1 {
+        font-size: 4vw;
+    }
+    .contact-container p, .contact-container ul li {
+        font-size: 2.5vw;
     }
 }

@@ -1,6 +1,6 @@
-window.onload = function() {
+window.onload = () => {
     document.body.style.setProperty('--scroll', 0);
-    document.getElementsByClassName('home-button')[0].getElementsByTagName('a')[0].style.setProperty('opacity', 'calc(max(var(--scroll) - 0.25, 0) * 4 / 3)');
+    document.getElementById("home-button").style.setProperty('opacity', 'calc(max(var(--scroll) - 0.25, 0) * 4 / 3)');
 }
 
 window.addEventListener('scroll', () => {
