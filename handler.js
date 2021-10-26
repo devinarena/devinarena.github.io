@@ -13,3 +13,12 @@ const bgcheck = document.getElementById("background-button");
         }
     }
 }
+
+window.onload = () => {
+    document.body.style.setProperty('--scroll', 0);
+}
+
+window.addEventListener('scroll', () => {
+    let scroll = window.pageYOffset / (document.body.offsetHeight - window.innerHeight);
+    document.body.style.setProperty('--scroll', scroll);
+});
