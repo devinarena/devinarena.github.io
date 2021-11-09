@@ -13,6 +13,11 @@ html {
 }
 
 body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     background-color: #566F54;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 22px;
@@ -52,43 +57,9 @@ body {
     animation: slide 20s linear infinite;
 }
 
-.section {
+.landing {
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.container {
-    position: absolute;
-    width: 70%;
-    min-height: 90%;
-    max-height: 95vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: var(--opague);
-    color: #fff;
-    padding: 1%;
-    border-radius: 25px;
-    transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -moz-webkit-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    overflow: hidden;
-}
-
-.container:hover {
-    background: rgba(80, 80, 80, 0.9);
-}
-
-.container h1 {
-    text-align: center;
-    font-size: 48px;
-}
-
-.landing {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -134,6 +105,32 @@ body {
     background: rgba(255, 255, 255, 0.25);
 }
 
+.container {
+    width: 70%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--opague);
+    color: #fff;
+    padding: 1%;
+    margin: 5% 0;
+    border-radius: 25px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+
+.container:hover {
+    background: rgba(80, 80, 80, 0.9);
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 5vw;
+}
+
 .about-text {
     width: 50%;
     height: 50%;
@@ -144,10 +141,18 @@ body {
     align-items: center;
 }
 
+.about-text h1 {
+    font-size: 7vw;
+}
+
 .contact-container {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+}
+
+.contact-container h1 {
+    font-size: 7vw;
 }
 
 .contact-container ul {
@@ -181,7 +186,7 @@ body {
     flex-direction: column;
 }
 
-.project-container h1, .contact-container h1 {
+.project-container h1 {
     font-size: 2.5vw;
 }
 
