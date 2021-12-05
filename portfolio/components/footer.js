@@ -7,16 +7,17 @@
 * @description Basic footer for every page.
 */
 
-import { Box, Heading } from "@chakra-ui/layout";
+import { Heading } from "@chakra-ui/layout";
+import { Container } from "@chakra-ui/react";
 
 const Footer = () => {
 
     return (
-        <Box>
-            <Heading as="h3">
-
+        <Container display="flex" pb={6} centerContent>
+            <Heading as="h3" size="md">
+                &copy; 2021 Devin Arena
             </Heading>
-        </Box>
+        </Container>
     );
 }
 

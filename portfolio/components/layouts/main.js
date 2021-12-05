@@ -1,4 +1,6 @@
 import { Box } from "@chakra-ui/layout";
+import Footer from "components/footer";
+import Navbar from "components/navbar";
 import Head from "next/head";
 
 /**
@@ -11,11 +13,16 @@ const Main = ({ children, title }) => {
 
     return (
         <Box as="main">
+
             <Head>
                 <title>{title} - Devin Arena</title>
-                <meta name="og:title" content={title} />
             </Head>
+
+            <Navbar />
+
             {children}
+
+            <Footer />
         </Box>
     );
 }
