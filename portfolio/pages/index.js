@@ -1,6 +1,8 @@
 
-import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Button, Container, Heading, Text } from '@chakra-ui/react';
+import { ChevronRightIcon, InfoIcon } from '@chakra-ui/icons';
+import { Box, Button, Container, Heading, Text, Flex, List, ListItem, Link } from '@chakra-ui/react';
+import ExperienceEntry from 'components/expentry';
+import Footer from 'components/footer';
 import Main from 'components/layouts/main';
 
 /**
@@ -20,7 +22,7 @@ const Home = () => {
             <Heading as="h1" fontSize={{ base: "5xl" }}>
               Devin Arena
             </Heading>
-            <Text as="p" fontSize={{ base: "xl", md: "2xl" }}>
+            <Text fontSize={{ base: "xl", md: "2xl" }}>
               Student and Software Engineer
             </Text>
           </Box>
@@ -35,12 +37,59 @@ const Home = () => {
           </Text>
 
           <Box align="center" mt={3}>
-            <Button align="center" rightIcon={<ChevronRightIcon />}>Projects</Button>
+            <Button align="center" rightIcon={<ChevronRightIcon />}>
+              Projects
+            </Button>
           </Box>
         </Box>
 
+        <Box mt={8}>
+          <Heading as="h3" variant="sectionTitle">
+            Education &amp; Experience
+          </Heading>
+          <ExperienceEntry date="2019 - Present">
+            Pursuing Bachelor's of Science at Florida Gulf Coast University
+          </ExperienceEntry>
+          <ExperienceEntry date="Spring 2021">
+            Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
+          </ExperienceEntry>
+          <Box mt={3} align="center">
+            <Button align="center" rightIcon={<InfoIcon />}>
+              Resume
+            </Button>
+          </Box>
+        </Box>
+
+        <Box mt={8}>
+          <Heading as="h3" variant="sectionTitle">
+            Hobbies
+          </Heading>
+          <Text variant="indented">
+            Game Development (Godot), Building Apps &amp; Websites, Writing Music, Playing Piano, Running, Playing Soccer
+          </Text>
+        </Box>
+
+        <Box mt={8}>
+          <Heading as="h3" variant="sectionTitle">
+            Contact
+          </Heading>
+          <List styleType="none">
+            <ListItem>
+              <Link href="https://www.linkedin.com/in/devin-arena/" fontSize="lg">
+                LinkedIn
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link href="https://github.com/devinarena" fontSize="lg">
+                GitHub
+              </Link>
+            </ListItem>
+          </List>
+        </Box>
+
+        <Footer />
       </Container>
-    </Main>
+    </Main >
   );
 }
 
