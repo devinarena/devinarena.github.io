@@ -1,6 +1,8 @@
 
 import { ChevronRightIcon, InfoIcon } from '@chakra-ui/icons';
-import { Box, Button, Container, Heading, Text, Flex, List, ListItem, Link } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Text, List, ListItem, Link } from '@chakra-ui/react';
+import { VscGithub } from 'react-icons/vsc';
+import { AiFillLinkedin } from 'react-icons/ai';
 import ExperienceEntry from 'components/expentry';
 import Main from 'components/layouts/main';
 
@@ -14,17 +16,15 @@ const Home = () => {
 
   return (
     <Main title='Homepage'>
-      <Container p={[8, 8, 8, 20]} maxW='container.md'>
+      <Container px={10} pt={20} maxW='container.md'>
 
-        <Box display='flex'>
-          <Box flexGrow='1'>
-            <Heading as='h1' fontSize={{ base: '5xl' }}>
-              Devin Arena
-            </Heading>
-            <Text fontSize={{ base: 'xl', md: '2xl' }}>
-              Student and Software Engineer
-            </Text>
-          </Box>
+        <Box display='flex' flexDirection='column'>
+          <Heading as='h1' fontSize={{ base: '5xl' }}>
+            Devin Arena
+          </Heading>
+          <Text fontSize={{ base: 'xl', md: '2xl' }}>
+            Student and Software Engineer
+          </Text>
         </Box>
 
         <Box mt={8}>
@@ -36,7 +36,7 @@ const Home = () => {
           </Text>
 
           <Box align='center' mt={3}>
-            <Button align='center' rightIcon={<ChevronRightIcon />}>
+            <Button align='center' rightIcon={<ChevronRightIcon />} colorScheme='blue' >
               Projects
             </Button>
           </Box>
@@ -53,7 +53,7 @@ const Home = () => {
             Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
           </ExperienceEntry>
           <Box mt={3} align='center'>
-            <Button align='center' rightIcon={<InfoIcon />}>
+            <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
               Resume
             </Button>
           </Box>
@@ -74,12 +74,16 @@ const Home = () => {
           </Heading>
           <List styleType='none'>
             <ListItem>
-              <Link href='https://www.linkedin.com/in/devin-arena/' fontSize='lg'>
+              <Link href="https://www.linkedin.com/in/devin-arena/" display='inline-flex'
+                alignItems='center' style={{ gap: 4 }} fontSize='2xl' >
+                <AiFillLinkedin />
                 LinkedIn
               </Link>
             </ListItem>
             <ListItem>
-              <Link href='https://github.com/devinarena' fontSize='lg'>
+              <Link href="https://github.com/devinarena/devinarena.github.io" display='inline-flex'
+                alignItems='center' style={{ gap: 4 }}  fontSize='2xl'>
+                <VscGithub />
                 GitHub
               </Link>
             </ListItem>
@@ -89,6 +93,6 @@ const Home = () => {
       </Container>
     </Main >
   );
-}
+};
 
 export default Home;

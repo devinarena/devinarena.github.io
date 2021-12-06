@@ -13,9 +13,9 @@ import { Container } from "@chakra-ui/react";
 const Footer = () => {
 
     return (
-        <Container display="flex" pb={6} centerContent>
+        <Container display="flex" pb={6} mt={8} centerContent>
             <Heading as="h3" size="md">
-                &copy; 2021 Devin Arena
+                &copy; 2021 Devin Arena - Built with Next.js and ChakraUI
             </Heading>
         </Container>
     );
