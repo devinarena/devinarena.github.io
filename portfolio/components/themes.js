@@ -27,7 +27,13 @@ const components = {
                 textDecorationThickness: 4,
                 textDecorationColor: 'gray.700',
                 marginBottom: 6,
-            }
+            },
+            projectDate: {
+                fontSize: 20,
+                padding: 1,
+                opacity: 0.75,
+                background: 'whiteAlpha.300'
+            },
         }
     },
     Text: {
@@ -39,7 +45,13 @@ const components = {
             year: {
                 fontWeight: 'bold',
                 textIndent: '1rem',
-            }
+            },
+            projectLabel: {
+                color: 'red.200',
+                background: 'red.800',
+                padding: 1,
+                textAlign: 'justify',
+            },
         }
     },
     Link: {

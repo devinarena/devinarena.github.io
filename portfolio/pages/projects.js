@@ -1,9 +1,17 @@
+import styles from '../components/styles/project-image.module.css';
+
 import { Box, Container, Heading, Text, SimpleGrid, Flex, LinkBox, useColorModeValue } from "@chakra-ui/react";
 import Main from "components/layouts/main";
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-import minesweeperAI from '../public/images/minesweeperai.png';
+import minesweeperAI from '../public/images/minesweeperai_card.png';
+import apptracker from '../public/images/apptracker-desktop.png';
+import pixelstriker from '../public/images/pixelstriker_card.png';
+import productlog from '../public/images/productlog_card.png';
+import telegramcounter from '../public/images/telegramcounter_card.png';
+import useroux from '../public/images/useroux_card.png';
+import { Grow, SlideIn } from 'components/animated';
 
 /**
 * @file projects.js
@@ -16,15 +24,15 @@ const Projects = () => {
     const ProjectItem = ({ children, image, id, title }) => {
 
         return (
-            <Flex w='100%' scale='0.9' direction='column' justify='flex-start' align='stretch'>
+            <Flex w='100%' direction='column' justify='flex-start' align='center'>
                 <NextLink href={`projects/${id}`} passHref>
                     <LinkBox cursor='pointer' textAlign='center' transition='color 1s ease'
                         _hover={{ color: 'blue.500' }} >
-                        <Image src={image} alt={title} placeholder='blur' loading='lazy' />
+                        <Image className={styles.projectCard} src={image} alt={title} placeholder='blur' loading='lazy' layout='intrinsic' />
                         <Heading as='h3' fontSize='2xl' mt={1}>
                             {title}
                         </Heading>
-                        <Text>
+                        <Text mt={1}>
                             {children}
                         </Text>
                     </LinkBox>
@@ -37,34 +45,48 @@ const Projects = () => {
         <Main title='Projects'>
             <Container px={10} pt={20} maxW='container.md'>
 
-                <Box display='flex' flexDirection='column'>
-                    <Heading as='h1' fontSize={{ base: '5xl' }}>
-                        Projects
-                    </Heading>
-                    <Text fontSize={{ base: 'kg', md: 'xl' }}>
-                        These are a collection of the projects I've built and am most proud of.
-                    </Text>
-                </Box>
+                <SlideIn delay={0} time={1} direction='right'>
+                    <Box display='flex' flexDirection='column'>
+                        <Heading as='h1' fontSize={{ base: '5xl' }}>
+                            Projects
+                        </Heading>
+                        <Text fontSize={{ base: 'kg', md: 'xl' }}>
+                            These are a collection of the projects I've built and am most proud of.
+                        </Text>
+                    </Box>
+                </SlideIn>
 
-                <SimpleGrid mt={8} columns={[1, 1, 2, 3]} gap={5}>
-                    <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
-                        Test text here! Test text here! Test text here! Test text here!
-                    </ProjectItem>
-                    <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
-                        Test text here!
-                    </ProjectItem>
-                    <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
-                        Test text here!
-                    </ProjectItem>
-                    <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
-                        Test text here!
-                    </ProjectItem>
-                    <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
-                        Test text here!
-                    </ProjectItem>
-                    <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
-                        An AI that solves mineweeper puzzles using real tactics. Built using vanilla JavaScript.
-                    </ProjectItem>
+                <SimpleGrid mt={8} columns={[1, 2, 2, 3]} gap={5}>
+                    <Grow delay={0.4} time={0.8}>
+                        <ProjectItem image={useroux} title='UseRoux' id='useroux'>
+                            A SpeedSolving guide, giving examples of how to solve a Rubik's cube properly in a cool 3D simulator.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={0.6} time={0.8}>
+                        <ProjectItem image={apptracker} title='AppTracker' id='apptracker'>
+                            A useful web application for tracking internship/job applications I built for myself.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={0.8} time={0.8}>
+                        <ProjectItem image={pixelstriker} title='Pixel Striker' id='pixelstriker'>
+                            Shoot and save goals in an endless arcade-style soccer app for Android.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={1.0} time={0.8}>
+                        <ProjectItem image={productlog} title='Product Log' id='productlog'>
+                            Catalog purchases track collections using a fun barcode-scanning mobile app built with Flutter.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={1.2} time={0.8}>
+                        <ProjectItem image={telegramcounter} title='Telegram Counter' id='telegramcounter'>
+                            Analyze messaging trends using a simple, lightweight Python script.
+                        </ProjectItem>
+                    </Grow>
+                    <Grow delay={1.4} time={0.8}>
+                        <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
+                            An AI that solves mineweeper puzzles using real tactics. Built using vanilla JavaScript.
+                        </ProjectItem>
+                    </Grow>
                 </SimpleGrid>
 
             </Container>
