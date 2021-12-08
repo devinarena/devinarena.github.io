@@ -94,19 +94,19 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8} >
-                        <Image src={menu} />
+                        <Image src={menu} alt='Game menu' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={goalie} />
+                        <Image src={goalie} alt='Goalie mode' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={game} />
+                        <Image src={game} alt='Striker mode' />
                     </Box>
                 </Grow>
 

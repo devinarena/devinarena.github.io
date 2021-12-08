@@ -94,19 +94,19 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8} >
-                        <Image src={desktop} />
+                        <Image src={desktop} alt='Apptracker Desktop' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={upload} />
+                        <Image src={upload} alt='Apptracker Edit' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={mobile} />
+                        <Image src={mobile} alt='Apptracker Mobile' />
                     </Box>
                 </Grow>
 

@@ -36,7 +36,7 @@ const UseRoux = () => {
                     </SlideIn>
                     <SlideIn delay={0.4} time={1} direction='right'>
                         <Text variant='indented'>
-                            Users can enter UPCs or scan barcodes to add items to their collection. They can catalog the product's name, description, price, rating, and more. Users can sort products, recall using barcodes or UPCs and classify products using tags.
+                            Users can enter UPCs or scan barcodes to add items to their collection. They can catalog the product&apos;s name, description, price, rating, and more. Users can sort products, recall using barcodes or UPCs and classify products using tags.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0.6} time={1} direction='left'>
@@ -95,25 +95,25 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8} >
-                        <Image src={menu} />
+                        <Image src={menu} alt='Menu' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={product} />
+                        <Image src={product} alt='Product' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={list} />
+                        <Image src={list} alt='Product List' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.9} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={stats} />
+                        <Image src={stats} alt='Collection stats' />
                     </Box>
                 </Grow>
 

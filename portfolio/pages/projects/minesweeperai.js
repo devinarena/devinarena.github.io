@@ -93,13 +93,13 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={image1} />
+                        <Image src={image1} alt='Debug Map' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={image2} />
+                        <Image src={image2} alt='Almost solved' />
                     </Box>
                 </Grow>
 

@@ -22,7 +22,7 @@ const Home = () => {
         <Main title='Homepage'>
             <Container px={8} pt={20} maxW='container.md'>
                 <Grow delay={0} time={0.4}>
-                    <Image className={styles.doggos} src={dogs} />
+                    <Image className={styles.doggos} src={dogs} alt='Doggos' />
                 </Grow>
                 <SlideIn delay={0.2} time={0.4} direction='right'>
                     <Flex direction='column' align='center'>
@@ -33,7 +33,7 @@ const Home = () => {
                             This resource could not be found :(
                         </Text>
                         <Text>
-                            Here's a picture of my dogs though! :)
+                            Here&apos;s a picture of my dogs though! :)
                         </Text>
                         <Link href='/' passHref>
                             <Button align='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue' mt={5}>

@@ -37,7 +37,7 @@ const Home = () => {
               About
             </Heading>
             <Text variant='indented'>
-              My name is Devin Arena, and I'm currently a student and software engineer based in Naples, Florida. I currently attend Florida Gulf Coast University pursuing a Bachelor's of Science in Software Engineering. I found my love for programming early, at the age of 9. Ever since, I've enjoyed designing and building websites, apps, and games. Creating useful software and enjoyable games are some of my favorite hobbies.
+              My name is Devin Arena, and I&apos;m currently a student and software engineer based in Naples, Florida. I currently attend Florida Gulf Coast University pursuing a Bachelor&apos;s of Science in Software Engineering. I found my love for programming early, at the age of 9. Ever since, I&apos;ve enjoyed designing and building websites, apps, and games. Creating useful software and enjoyable games are some of my favorite hobbies.
             </Text>
 
             <Box align='center' mt={3}>
@@ -56,17 +56,17 @@ const Home = () => {
               Education &amp; Experience
             </Heading>
             <ExperienceEntry date='2019 - Present'>
-              Pursuing Bachelor's of Science at Florida Gulf Coast University
+              Pursuing Bachelor&apos;s of Science at Florida Gulf Coast University
             </ExperienceEntry>
             <ExperienceEntry date='Spring 2022'>
               Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
             </ExperienceEntry>
             <Box mt={3} align='center'>
-              <Link href='/Resume.pdf' passHref>
+              <NextLink href='/Resume.pdf' passHref>
                 <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
                   Resume
                 </Button>
-              </Link>
+              </NextLink>
             </Box>
           </Box>
         </SlideIn>
