@@ -62,11 +62,11 @@ const Home = () => {
               Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
             </ExperienceEntry>
             <Box mt={3} align='center'>
-              <Link href='/Resume.pdf' passHref>
+              <NextLink href='/Resume.pdf' passHref>
                 <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
                   Resume
                 </Button>
-              </Link>
+              </NextLink>
             </Box>
           </Box>
         </SlideIn>
