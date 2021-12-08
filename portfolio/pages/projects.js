@@ -51,7 +51,7 @@ const Projects = () => {
                             Projects
                         </Heading>
                         <Text fontSize={{ base: 'kg', md: 'xl' }}>
-                            These are a collection of the projects I've built and am most proud of.
+                            These are a collection of the projects I&apos;ve built and am most proud of.
                         </Text>
                     </Box>
                 </SlideIn>
@@ -59,7 +59,7 @@ const Projects = () => {
                 <SimpleGrid mt={8} columns={[1, 2, 2, 3]} gap={5}>
                     <Grow delay={0.4} time={0.8}>
                         <ProjectItem image={useroux} title='UseRoux' id='useroux'>
-                            A SpeedSolving guide, giving examples of how to solve a Rubik's cube properly in a cool 3D simulator.
+                            A SpeedSolving guide, giving examples of how to solve a Rubik&apos;s cube properly in a cool 3D simulator.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={0.6} time={0.8}>

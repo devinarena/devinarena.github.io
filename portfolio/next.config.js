@@ -1,6 +1,10 @@
 const debug = process.env.NODE_ENV !== 'production';
 
 module.exports = {
-  assetPrefix: !debug ? '/portfolio/' : '',
+  assetPrefix: './',
   reactStrictMode: true,
+  images: {
+    loader: 'akamai',
+    path: ''
+  }
 };
