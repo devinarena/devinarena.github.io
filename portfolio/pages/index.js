@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <Main title='Homepage'>
-      <Container px={10} pt={20} maxW='container.md'>
+      <Container px={8} pt={20} maxW='container.md'>
 
         <SlideIn delay={0} time={1} direction='right'>
           <Box display='flex' flexDirection='column'>
@@ -62,9 +62,11 @@ const Home = () => {
               Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
             </ExperienceEntry>
             <Box mt={3} align='center'>
-              <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
-                Resume
-              </Button>
+              <Link href='/Resume.pdf' passHref>
+                <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
+                  Resume
+                </Button>
+              </Link>
             </Box>
           </Box>
         </SlideIn>

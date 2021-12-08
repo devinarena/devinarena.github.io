@@ -1,4 +1,4 @@
-import styles from '../components/styles/project-image.module.css';
+import styles from '../components/styles/images.module.css';
 
 import { Box, Container, Heading, Text, SimpleGrid, Flex, LinkBox, useColorModeValue } from "@chakra-ui/react";
 import Main from "components/layouts/main";
@@ -43,7 +43,7 @@ const Projects = () => {
 
     return (
         <Main title='Projects'>
-            <Container px={10} pt={20} maxW='container.md'>
+            <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>
                     <Box display='flex' flexDirection='column'>

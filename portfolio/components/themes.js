@@ -50,18 +50,18 @@ const components = {
                 color: 'red.200',
                 background: 'red.800',
                 padding: 1,
-                textAlign: 'justify',
+                whiteSpace: 'nowrap',
             },
         }
     },
     Link: {
         baseStyle: props => ({
-            color: mode('blue.700', 'lightgray')(props),
+            color: mode('blue.700', 'gray.500')(props),
             padding: '4px',
             _hover: {
                 textDecoration: 'none',
                 background: mode('whiteAlpha.500', 'whiteAlpha.200')(props),
-                color: mode('blue.300', 'gray')(props)
+                color: mode('blue.300', 'gray.300')(props)
             }
         })
     },

@@ -5,24 +5,23 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import simulator from '../../public/images/useroux.png';
-import homepage from '../../public/images/useroux_homepage.png';
-import upload from '../../public/images/useroux_upload.png';
+import image1 from '../../public/images/minesweeperai.png';
+import image2 from '../../public/images/minesweeperai2.png';
 import { Grow, SlideIn } from "components/animated";
 
 const UseRoux = () => {
 
     return (
-        <Main title='UseRoux'>
+        <Main title='Minesweeper AI'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>
                     <Box display='flex' flexDirection='row' alignItems='flex-end'>
-                        <Heading as='h1' whiteSpace='nowrap'>
-                            UseRoux
+                        <Heading as='h1' whiteSpace='nowrap' fontSize={{ base: 'xl', md: '4xl' }}>
+                            Minesweeper AI
                         </Heading>
-                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{base: 'lg', md: 'xl'}}>
-                            October 2021 -
+                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{ base: 'md', md: 'xl' }}>
+                            December 2019 / September 2021
                         </Heading>
                     </Box>
                 </SlideIn>
@@ -30,17 +29,17 @@ const UseRoux = () => {
                 <Box mt={8}>
                     <SlideIn delay={0.2} time={1} direction='left'>
                         <Text variant='indented'>
-                            UseRoux is a solve-sharing and walkthrough webapp. Currently, the simulator allows users to walk through solves, giving them step by step instructions on the optimal solution for a certain scramble. The goal is to help teach people how to both use the Roux speedsolving method and improve their solves.
+                            An AI that successfully plays Minesweeper written in pure javascript.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0.4} time={1} direction='right'>
                         <Text variant='indented'>
-                            The simulator uses Three.js to build a 3D speedcube. The cube rotates according to the current scramble. The user can walk through each step using the left and right arrows, and the cube will follow the solution steps.
+                            The AI uses a probability map generated based on each revealed tile. It determines the safest tiles to reveal based on tiles that have already been satsified, where the number of adjacent mines equals the number of adjacent flags.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0.6} time={1} direction='left'>
                         <Text variant='indented'>
-                            Currently in development is the site allowing users to upload their solves. Solvers will be able to register for an account and post their solutions to scrambles to the internet. Users can also browse and view solves in the simulator.
+                            The AI solves puzzles in a similar way to how a human would solve them. It can fail in the beginning as it must guess randomly, but after revealing some tiles it had no issues. It can also solve puzzles incredibly quickly, however its rate is limited to really showcase how it works.
                         </Text>
                     </SlideIn>
                 </Box>
@@ -62,7 +61,7 @@ const UseRoux = () => {
                                 Tech Stack
                             </Text>
                             <Text ml={2}>
-                                Javascript, NodeJS, ReactJS, ThreeJS, Webpack, Express, MySQL, JWT
+                                Javascript
                             </Text>
                         </Flex>
                     </SlideIn>
@@ -71,9 +70,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/UseRoux' passHref>
-                                <Link ml={2}>
-                                    https://devinarena.com/UseRoux
+                            <NextLink href='/MinesweeperAI' passHref>
+                                <Link ml={2} fontSize={{ base: 'sm', md: 'lg' }}>
+                                    https://devinarena.com/MinesweeperAI
                                 </Link>
                             </NextLink>
                         </Flex>
@@ -83,7 +82,7 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Source
                             </Text>
-                            <NextLink href='https://github.com/devinarena/UseRoux' passHref>
+                            <NextLink href='https://github.com/devinarena/MinesweeperAI' passHref>
                                 <Link ml={2}>
                                     GitHub
                                 </Link>
@@ -94,23 +93,17 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={simulator} />
+                        <Image src={image1} />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={homepage} />
+                        <Image src={image2} />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
-                    <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={upload} />
-                    </Box>
-                </Grow>
-
-                <Grow delay={1.9} time={1}>
                     <Box mt={4} align='center'>
                         <NextLink href='/projects' passHref>
                             <Button align='center' leftIcon={<ChevronLeftIcon />} colorScheme='blue'>

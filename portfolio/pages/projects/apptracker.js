@@ -5,24 +5,24 @@ import NextLink from 'next/link';
 import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import simulator from '../../public/images/useroux.png';
-import homepage from '../../public/images/useroux_homepage.png';
-import upload from '../../public/images/useroux_upload.png';
+import desktop from '../../public/images/apptracker-desktop.png';
+import mobile from '../../public/images/apptracker-mobile.png';
+import upload from '../../public/images/apptracker-edit.png';
 import { Grow, SlideIn } from "components/animated";
 
 const UseRoux = () => {
 
     return (
-        <Main title='UseRoux'>
+        <Main title='AppTracker'>
             <Container px={8} pt={20} maxW='container.md'>
 
                 <SlideIn delay={0} time={1} direction='right'>
                     <Box display='flex' flexDirection='row' alignItems='flex-end'>
                         <Heading as='h1' whiteSpace='nowrap'>
-                            UseRoux
+                            AppTracker
                         </Heading>
-                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{base: 'lg', md: 'xl'}}>
-                            October 2021 -
+                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{ base: 'md', md: 'xl' }}>
+                            August 2021 - September 2021
                         </Heading>
                     </Box>
                 </SlideIn>
@@ -30,17 +30,17 @@ const UseRoux = () => {
                 <Box mt={8}>
                     <SlideIn delay={0.2} time={1} direction='left'>
                         <Text variant='indented'>
-                            UseRoux is a solve-sharing and walkthrough webapp. Currently, the simulator allows users to walk through solves, giving them step by step instructions on the optimal solution for a certain scramble. The goal is to help teach people how to both use the Roux speedsolving method and improve their solves.
+                            AppTracker is a web application developed using ReactJS. The app allows you to input information regarding your applications to companies. It tracks this information, displaying entries for each company as well as overall statistics.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0.4} time={1} direction='right'>
                         <Text variant='indented'>
-                            The simulator uses Three.js to build a 3D speedcube. The cube rotates according to the current scramble. The user can walk through each step using the left and right arrows, and the cube will follow the solution steps.
+                            Users can enter company name/position title, date of application, and any notes about the company. The app will track application numbers, interviews, offers, and rejections.
                         </Text>
                     </SlideIn>
                     <SlideIn delay={0.6} time={1} direction='left'>
                         <Text variant='indented'>
-                            Currently in development is the site allowing users to upload their solves. Solvers will be able to register for an account and post their solutions to scrambles to the internet. Users can also browse and view solves in the simulator.
+                            Also supports a light/dark theme, exporting company lists as JSON, and importing company lists from JSON files. All data is stored in Local Storage.
                         </Text>
                     </SlideIn>
                 </Box>
@@ -56,13 +56,13 @@ const UseRoux = () => {
                             </Text>
                         </Flex>
                     </SlideIn>
-                    <SlideIn delay={0.9} time={1} direction='left'>
+                    <SlideIn delay={1} time={0.9} direction='left'>
                         <Flex align='center' mt={1}>
                             <Text variant='projectLabel'>
                                 Tech Stack
                             </Text>
                             <Text ml={2}>
-                                Javascript, NodeJS, ReactJS, ThreeJS, Webpack, Express, MySQL, JWT
+                                Javascript, NodeJS, ReactJS, JSON
                             </Text>
                         </Flex>
                     </SlideIn>
@@ -71,9 +71,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/UseRoux' passHref>
+                            <NextLink href='/AppTracker' passHref>
                                 <Link ml={2}>
-                                    https://devinarena.com/UseRoux
+                                    https://devinarena.com/AppTracker
                                 </Link>
                             </NextLink>
                         </Flex>
@@ -83,7 +83,7 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Source
                             </Text>
-                            <NextLink href='https://github.com/devinarena/UseRoux' passHref>
+                            <NextLink href='https://github.com/devinarena/AppTracker' passHref>
                                 <Link ml={2}>
                                     GitHub
                                 </Link>
@@ -93,20 +93,20 @@ const UseRoux = () => {
                 </Box>
 
                 <Grow delay={1.3} time={1}>
-                    <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={simulator} />
+                    <Box display='flex' justifyContent='center' mt={8} >
+                        <Image src={desktop} />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={homepage} />
+                        <Image src={upload} />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={upload} />
+                        <Image src={mobile} />
                     </Box>
                 </Grow>
 
