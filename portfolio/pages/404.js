@@ -1,14 +1,13 @@
 import { Container, Flex, Heading, Text } from "@chakra-ui/layout";
-import Image from "next/image";
 import Link from "next/link";
 
 import Main from "components/layouts/main";
 import styles from '../components/styles/images.module.css';
 
-import dogs from '../public/images/cutedoggos.png';
 import { Button } from "@chakra-ui/button";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import { Grow, SlideIn } from "components/animated";
+import { Image } from "@chakra-ui/react";
 
 /**
 * @file index.js
@@ -22,7 +21,7 @@ const Home = () => {
         <Main title='Homepage'>
             <Container px={8} pt={20} maxW='container.md'>
                 <Grow delay={0} time={0.4}>
-                    <Image className={styles.doggos} src={dogs} alt='Doggos' />
+                    <Image className={styles.doggos} src='/images/cutedoggos.png' alt='Doggos' />
                 </Grow>
                 <SlideIn delay={0.2} time={0.4} direction='right'>
                     <Flex direction='column' align='center'>
@@ -30,7 +29,7 @@ const Home = () => {
                             404
                         </Heading>
                         <Text>
-                            This resource could not be found :(
+                            This resource could not be found
                         </Text>
                         <Text>
                             Here&apos;s a picture of my dogs though! :)

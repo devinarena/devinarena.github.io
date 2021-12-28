@@ -1,6 +1,6 @@
 
 import { ChevronRightIcon, InfoIcon } from '@chakra-ui/icons';
-import { Box, Button, Container, Heading, Text, List, ListItem, Link } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Text, List, ListItem, Link, Image } from '@chakra-ui/react';
 import { VscGithub } from 'react-icons/vsc';
 import { AiFillLinkedin } from 'react-icons/ai';
 import NextLink from 'next/link';
@@ -21,18 +21,25 @@ const Home = () => {
       <Container px={8} pt={20} maxW='container.md'>
 
         <SlideIn delay={0} time={1} direction='right'>
-          <Box display='flex' flexDirection='column'>
-            <Heading as='h1' fontSize={{ base: '5xl' }}>
-              Devin Arena
-            </Heading>
-            <Text fontSize={{ base: 'xl', md: '2xl' }}>
-              Student and Software Engineer
-            </Text>
+          <Box display='flex' flexDirection={{base: 'column', md: 'row'}} justifyContent='space-between' alignItems='center'>
+            <Box display='flex' flexDirection='column'>
+              <Heading as='h1' fontSize={{ base: '5xl' }}>
+                Devin Arena
+              </Heading>
+              <Text fontSize={{ base: 'xl', md: '2xl' }}>
+                Student and Software Engineer
+              </Text>
+            </Box>
+            <Box>
+              <Image src='./images/me.jpg' borderWidth='5px'
+                borderStyle='solid' borderColor='blue.700'
+                borderRadius='50%' maxW={200} mt={3} alt='Portfolio Picture'></Image>
+            </Box>
           </Box>
         </SlideIn>
 
         <SlideIn delay={0.4} time={1} direction='left'>
-          <Box mt={8}>
+          <Box mt={4}>
             <Heading as='h3' variant='sectionTitle'>
               About
             </Heading>
@@ -62,7 +69,7 @@ const Home = () => {
               Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
             </ExperienceEntry>
             <Box mt={3} align='center'>
-              <NextLink href='/Resume.pdf' passHref>
+              <NextLink href='./Resume.pdf' passHref>
                 <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
                   Resume
                 </Button>
@@ -77,7 +84,7 @@ const Home = () => {
               Hobbies
             </Heading>
             <Text>
-              Game Development, Building Apps &amp; Websites, Speedcubing, Writing Music, Playing Piano, Soccer
+              Game Development, Developing Apps &amp; Websites, Speedcubing, Music Composition, Piano, Soccer
             </Text>
           </Box>
         </SlideIn>
@@ -96,7 +103,7 @@ const Home = () => {
                 </Link>
               </ListItem>
               <ListItem>
-                <Link href="https://github.com/devinarena/devinarena.github.io" display='inline-flex'
+                <Link href="https://github.com/devinarena" display='inline-flex'
                   alignItems='center' style={{ gap: 4 }} fontSize='2xl'>
                   <VscGithub />
                   GitHub

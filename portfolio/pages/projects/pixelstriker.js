@@ -1,13 +1,10 @@
 import { Box, Container, Flex, Heading, Link, Text } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
+import { Image } from "@chakra-ui/react";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link';
-import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import menu from '../../public/images/pixelstriker_menu.png';
-import game from '../../public/images/pixelstriker.png';
-import goalie from '../../public/images/pixelstriker_goalie.png';
 import { Grow, SlideIn } from "components/animated";
 
 const UseRoux = () => {
@@ -94,19 +91,19 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8} >
-                        <Image src={menu} alt='Game menu' />
+                        <Image src='/images/pixelstriker_menu.png' alt='Game menu' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={goalie} alt='Goalie mode' />
+                        <Image src='/images/pixelstriker_goalie.png' alt='Goalie mode' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={game} alt='Striker mode' />
+                        <Image src='/images/pixelstriker.png' alt='Striker mode' />
                     </Box>
                 </Grow>
 

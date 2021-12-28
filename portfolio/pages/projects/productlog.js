@@ -1,14 +1,10 @@
 import { Box, Container, Flex, Heading, Link, Text } from "@chakra-ui/layout";
+import { Image } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/button";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link';
-import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import menu from '../../public/images/productlog_menu.png';
-import list from '../../public/images/productlog_list.png';
-import product from '../../public/images/productlog_product.png';
-import stats from '../../public/images/productlog_stats.png';
 import { Grow, SlideIn } from "components/animated";
 
 const UseRoux = () => {
@@ -95,25 +91,25 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8} >
-                        <Image src={menu} alt='Menu' />
+                        <Image src='/images/productlog_menu.png' alt='Menu' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={product} alt='Product' />
+                        <Image src='/images/productlog_product.png' alt='Product' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={list} alt='Product List' />
+                        <Image src='/images/productlog_list.png' alt='Product List' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.9} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={stats} alt='Collection stats' />
+                        <Image src='/images/productlog_stats.png' alt='Collection stats' />
                     </Box>
                 </Grow>
 

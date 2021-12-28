@@ -2,12 +2,10 @@ import { Box, Container, Flex, Heading, Link, Text } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link';
-import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import image1 from '../../public/images/minesweeperai.png';
-import image2 from '../../public/images/minesweeperai2.png';
 import { Grow, SlideIn } from "components/animated";
+import { Image } from "@chakra-ui/react";
 
 const UseRoux = () => {
 
@@ -70,9 +68,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/MinesweeperAI' passHref>
-                                <Link ml={2} fontSize={{ base: 'sm', md: 'lg' }}>
-                                    https://devinarena.com/MinesweeperAI
+                            <NextLink href='https://projects.devinarena.com/MinesweeperAI' passHref>
+                                <Link ml={2} overflowWrap='anywhere' textAlign='center'>
+                                    https://projects.devinarena.com/MinesweeperAI
                                 </Link>
                             </NextLink>
                         </Flex>
@@ -93,13 +91,13 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={image1} alt='Debug Map' />
+                        <Image src='/images/minesweeperai.png' alt='Debug Map' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={image2} alt='Almost solved' />
+                        <Image src='/images/minesweeperai2.png' alt='Almost solved' />
                     </Box>
                 </Grow>
 

@@ -1,16 +1,9 @@
 import styles from '../components/styles/images.module.css';
 
-import { Box, Container, Heading, Text, SimpleGrid, Flex, LinkBox, useColorModeValue } from "@chakra-ui/react";
+import { Box, Container, Heading, Text, SimpleGrid, Flex, LinkBox, useColorModeValue, Image } from "@chakra-ui/react";
 import Main from "components/layouts/main";
-import Image from 'next/image';
 import NextLink from 'next/link';
 
-import minesweeperAI from '../public/images/minesweeperai_card.png';
-import apptracker from '../public/images/apptracker-desktop.png';
-import pixelstriker from '../public/images/pixelstriker_card.png';
-import productlog from '../public/images/productlog_card.png';
-import telegramcounter from '../public/images/telegramcounter_card.png';
-import useroux from '../public/images/useroux_card.png';
 import { Grow, SlideIn } from 'components/animated';
 
 /**
@@ -58,32 +51,32 @@ const Projects = () => {
 
                 <SimpleGrid mt={8} columns={[1, 2, 2, 3]} gap={5}>
                     <Grow delay={0.4} time={0.8}>
-                        <ProjectItem image={useroux} title='UseRoux' id='useroux'>
+                        <ProjectItem image='/images/useroux_card.png' title='UseRoux' id='useroux'>
                             A SpeedSolving guide, giving examples of how to solve a Rubik&apos;s cube properly in a cool 3D simulator.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={0.6} time={0.8}>
-                        <ProjectItem image={apptracker} title='AppTracker' id='apptracker'>
-                            A useful web application for tracking internship/job applications I built for myself.
+                        <ProjectItem image='/images/pixelbackground_card.png' title='Pixel Background' id='pixelbackground'>
+                            Generate amazing pixel art wallpapers using images from your favorite subreddits.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={0.8} time={0.8}>
-                        <ProjectItem image={pixelstriker} title='Pixel Striker' id='pixelstriker'>
-                            Shoot and save goals in an endless arcade-style soccer app for Android.
+                        <ProjectItem image='/images/apptracker-desktop.png' title='AppTracker' id='apptracker'>
+                            A useful web application for tracking internship/job applications I built for myself.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={1.0} time={0.8}>
-                        <ProjectItem image={productlog} title='Product Log' id='productlog'>
-                            Catalog purchases track collections using a fun barcode-scanning mobile app built with Flutter.
+                        <ProjectItem image='/images/pixelstriker_card.png' title='Pixel Striker' id='pixelstriker'>
+                            Shoot and save goals in an endless arcade-style soccer app for Android.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={1.2} time={0.8}>
-                        <ProjectItem image={telegramcounter} title='Telegram Counter' id='telegramcounter'>
-                            Analyze messaging trends using a simple, lightweight Python script.
+                        <ProjectItem image='/images/productlog_card.png' title='Product Log' id='productlog'>
+                            Catalog purchases track collections using a fun barcode-scanning mobile app built with Flutter.
                         </ProjectItem>
                     </Grow>
                     <Grow delay={1.4} time={0.8}>
-                        <ProjectItem image={minesweeperAI} title='Minesweeper AI' id='minesweeperai'>
+                        <ProjectItem image='/images/minesweeperai_card.png' title='Minesweeper AI' id='minesweeperai'>
                             An AI that solves mineweeper puzzles using real tactics. Built using vanilla JavaScript.
                         </ProjectItem>
                     </Grow>

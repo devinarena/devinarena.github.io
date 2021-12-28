@@ -1,13 +1,10 @@
 import { Box, Container, Flex, Heading, Link, Text } from "@chakra-ui/layout";
+import { Image } from "@chakra-ui/react";
 import { Button } from "@chakra-ui/button";
 import { ChevronLeftIcon } from "@chakra-ui/icons";
 import NextLink from 'next/link';
-import Image from 'next/image';
 import Main from "components/layouts/main";
 
-import simulator from '../../public/images/useroux.png';
-import homepage from '../../public/images/useroux_homepage.png';
-import upload from '../../public/images/useroux_upload.png';
 import { Grow, SlideIn } from "components/animated";
 
 const UseRoux = () => {
@@ -21,7 +18,7 @@ const UseRoux = () => {
                         <Heading as='h1' whiteSpace='nowrap'>
                             UseRoux
                         </Heading>
-                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{base: 'lg', md: 'xl'}}>
+                        <Heading as='h3' variant='projectDate' ml={3} borderRadius={5} fontSize={{ base: 'lg', md: 'xl' }}>
                             October 2021 -
                         </Heading>
                     </Box>
@@ -71,9 +68,9 @@ const UseRoux = () => {
                             <Text variant='projectLabel'>
                                 Link
                             </Text>
-                            <NextLink href='/UseRoux' passHref>
-                                <Link ml={2}>
-                                    https://devinarena.com/UseRoux
+                            <NextLink href='https://projects.devinarena.com/UseRoux' passHref>
+                                <Link ml={2} overflowWrap='anywhere' textAlign='center'>
+                                    https://projects.devinarena.com/UseRoux
                                 </Link>
                             </NextLink>
                         </Flex>
@@ -94,19 +91,19 @@ const UseRoux = () => {
 
                 <Grow delay={1.3} time={1}>
                     <Box display='flex' justifyContent='center' mt={8}>
-                        <Image src={simulator} alt='Simulator' />
+                        <Image src='/images/useroux.png' alt='Simulator' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.5} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={homepage} alt='Homepage' />
+                        <Image src='/images/useroux_homepage.png' alt='Homepage' />
                     </Box>
                 </Grow>
 
                 <Grow delay={1.7} time={1}>
                     <Box display='flex' justifyContent='center' mt={4}>
-                        <Image src={upload} alt='Upload' />
+                        <Image src='/images/useroux_upload.png' alt='Upload' />
                     </Box>
                 </Grow>
 
