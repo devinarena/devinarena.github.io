@@ -18,7 +18,7 @@ const Projects = () => {
 
         return (
             <Flex w='100%' direction='column' justify='flex-start' align='center'>
-                <NextLink href={`projects/${id}`} passHref>
+                <NextLink href={`/projects/${id}`} passHref>
                     <LinkBox cursor='pointer' textAlign='center' transition='color 1s ease'
                         _hover={{ color: 'blue.500' }} >
                         <Image className={styles.projectCard} src={image} alt={title} placeholder='blur' loading='lazy' layout='intrinsic' />

@@ -31,7 +31,7 @@ const Home = () => {
               </Text>
             </Box>
             <Box>
-              <Image src='./images/me.jpg' borderWidth='5px'
+              <Image src='/images/me.jpg' borderWidth='5px'
                 borderStyle='solid' borderColor='blue.700'
                 borderRadius='50%' maxW={200} mt={3} alt='Portfolio Picture'></Image>
             </Box>
@@ -69,7 +69,7 @@ const Home = () => {
               Incoming Embedded Software Engineering Intern at Syracuse Research Corporation Inc.
             </ExperienceEntry>
             <Box mt={3} align='center'>
-              <NextLink href='./Resume.pdf' passHref>
+              <NextLink href='/Resume.pdf' passHref>
                 <Button align='center' rightIcon={<InfoIcon />} colorScheme='blue'>
                   Resume
                 </Button>
