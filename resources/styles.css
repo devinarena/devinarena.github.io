@@ -1,12 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    --bg-color: #3d4344;
-    --bg-color-dark: #323738;
-    --bg-color-darker: #252829;
-    --font-color: #f0f0f0;
-    --link-color: #9fa2c0;
-    --link-color-hover: #c1c7f6;
 }
 
 body {
@@ -15,6 +9,12 @@ body {
     background-color: var(--bg-color);
     color: var(--font-color);
     font-family: "Roboto Mono", monospace;
+    --bg-color: #3d4344;
+    --bg-color-dark: #323738;
+    --bg-color-darker: #252829;
+    --font-color: #f0f0f0;
+    --link-color: #9fa2c0;
+    --link-color-hover: #c1c7f6;
 }
 
 main {
@@ -26,7 +26,7 @@ main {
     justify-content: stretch;
 }
 
-#side-nav {
+#navbar {
     width: 20%;
     height: 100vh;
     top: 0;
@@ -41,7 +41,18 @@ main {
     justify-content: center;
 }
 
-#side-nav ul {
+#navbar h1 a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-size: 32px;
+    transition: color 0.4s ease;
+}
+
+#navbar h1 a:hover {
+    color: var(--link-color-hover);
+}
+
+#navbar ul {
     margin-top: 40px;
     list-style: none;
     display: flex;
@@ -50,18 +61,18 @@ main {
     justify-content: center;
 }
 
-#side-nav ul li {
+#navbar ul li {
     margin: 10px 0;
 }
 
-#side-nav ul li a {
+#navbar ul li a {
     text-decoration: none;
     color: var(--link-color);
     font-size: 24px;
     transition: color 0.4s ease;
 }
 
-#side-nav ul li a:hover {
+#navbar ul li a:hover {
     color: var(--link-color-hover);
 }
 
@@ -78,7 +89,7 @@ main {
 #summary {
     width: 100%;
     margin-top: 0px;
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,17 +111,21 @@ main {
 }
 
 #summary h3 {
-    font-size: 24px;
+    font-size: 36px;
     margin: 5px 0;
 }
 
 #summary p {
-    font-size: 18px;
+    font-size: 24px;
     margin: 5px 0;
 }
 
 #summary ul {
     text-align: left;
+}
+
+#summary ul li {
+    margin: 10px 0;
 }
 
 #resume {
@@ -139,10 +154,9 @@ main {
 }
 
 #experience ul li {
-    width: 100%;
     margin: 40px 0;
-    background-color: var(--bg-color-dark);
     padding: 12px;
+    background-color: var(--bg-color-dark);
     border-radius: 5px;
 }
 
@@ -164,6 +178,15 @@ main {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+#experience ul li span h4 {
+    flex: 2;
+}
+
+#experience ul li span h5 {
+    flex: 1;
+    text-align: right;
 }
 
 #experience ul li p {
@@ -197,4 +220,93 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+    #navbar {
+        height: auto;
+        width: auto;
+        border-radius: 0px 0px 20px 0px;
+    }
+
+    #navbar h1 a {
+        font-size: 28px;
+    }
+
+    #navbar h1 a:after {
+        content: " (+)";
+    }
+
+    #navbar ul {
+        margin-top: 10px;
+        display: var(--quick-links-display, none);
+    }
+
+    #navbar ul li {
+        margin: 5px 0;
+    }
+
+    #navbar ul li a {
+        font-size: 20px;
+    }
+
+    #content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    #summary {
+        height: auto;
+    }
+    
+    #summary h1 {
+        font-size: 80px;
+    }
+
+    #summary h3 {
+        font-size: 60px;
+    }
+
+    #summary p {
+        font-size: 36px;
+    }
+
+    #summary img {
+        width: 400px;
+        height: 400px;
+    }
+
+    #resume {
+        font-size: 40px;
+    }
+
+    #experience h1, #links h1 {
+        font-size: 80px;
+    }
+
+    #experience ul li span {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    #experience ul li h3 {
+        font-size: 40px;
+    }
+
+    #experience ul li h4 {
+        font-size: 36px;
+    }
+
+    #experience ul li h5 {
+        font-size: 28px;
+    }
+
+    #experience ul li p {
+        font-size: 24px;
+    }
+
+    #links ul li a {
+        font-size: 60px;
+    }
 }
