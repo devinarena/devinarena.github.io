@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    --bg-color: #3d4344;
+    --bg-color-dark: #323738;
+    --bg-color-darker: #252829;
+    --font-color: #f0f0f0;
+    --link-color: #9fa2c0;
+    --link-color-hover: #c1c7f6;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: "Roboto Mono", monospace;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: stretch;
+}
+
+#side-nav {
+    width: 20%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    padding: 20px;
+    background-color: var(--bg-color-darker);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#side-nav ul {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#side-nav ul li {
+    margin: 10px 0;
+}
+
+#side-nav ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 24px;
+    transition: color 0.4s ease;
+}
+
+#side-nav ul li a:hover {
+    color: var(--link-color-hover);
+}
+
+#content {
+    margin-left: calc(40px + 23%);
+    margin-right: 3%;
+    width: 100%;
+}
+
+.section {
+    margin: 10% 0;
+}
+
+#summary {
+    width: 100%;
+    margin-top: 0px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#summary img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 3px solid black;
+}
+
+#summary h1 {
+    font-size: 48px;
+    margin: 5px 0;
+}
+
+#summary h3 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+#summary p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+#summary ul {
+    text-align: left;
+}
+
+#resume {
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--font-color);
+    background-color: var(--link-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.4s ease;
+}
+
+#resume:hover {
+    background-color: var(--link-color-hover);
+}
+
+#experience h1, #links h1 {
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#experience ul {
+    width: 100%;
+    list-style: none;
+}
+
+#experience ul li {
+    width: 100%;
+    margin: 40px 0;
+    background-color: var(--bg-color-dark);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+#experience ul li h3 {
+    font-size: 24px;
+}
+
+#experience ul li h4 {
+    font-size: 20px;
+}
+
+#experience ul li h5 {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#experience ul li span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#experience ul li p {
+    font-size: 18px;
+}
+
+#links ul {
+    width: 100%;
+    margin-top: 40px;
+    list-style: none;
+}
+
+#links ul li {
+    margin: 10px 0;
+}
+
+#links ul li a {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 28px;
+    transition: color 0.4s ease;
+}
+
+#links ul li a:hover {
+    color: var(--link-color-hover);
+}
+
+#footer {
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
