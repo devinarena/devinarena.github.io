@@ -7,8 +7,31 @@
 
 <body>
     <main>
+        <div id="background">
+            <div id="sky"></div>
+            <div id="terrain"></div>
+            <div id="stars-1">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <div id="stars-2">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+            <div id="stars-3">
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+                <div class="star"></div>
+            </div>
+        </div>
         <div id="navbar">
-            <h1><a href="#" onclick="updateQuickLinksVisibility()">Quick Links</a></h1>
+            <h1><a href="#" onclick="updateQuickLinksVisibility()"><span>Navigation</span><div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div></a></h1>
             <ul>
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -21,12 +44,24 @@
                 <h1>Devin Arena</h1>
                 <h3>Software Engineer</h3>
                 <ul>
-                    <li><p>I am a 24 year old Software Engineer based in Saint Louis, Missouri.</p></li>
-                    <li><p>I graduated from Florida Gulf Coast University in 2023 with a B.S. in Software Engineering.</p></li>
-                    <li><p>Most of my professional experience is in developing backend microservices using Spring Boot and Java.</p></li>
-                    <li><p>In my free time I enjoy hiking, writing music, solving Rubik's cubes, and playing sports.</p></li>
+                    <li>
+                        <img src="./resources/about_icon.png" alt="About Icon"/>
+                        <p>I am a 24 year old Software Engineer based in Saint Louis, Missouri.</p>
+                    </li>
+                    <li>
+                        <img src="./resources/education_icon.png" alt="Education Icon"/>
+                        <p>I graduated from Florida Gulf Coast University in 2023 with a B.S. in Software Engineering.</p>
+                    </li>
+                    <li>
+                        <img src="./resources/experience_icon.png" alt="Education Icon"/>
+                        <p>Most of my professional experience is in developing backend microservices using Spring and Java.</p>
+                    </li>
+                    <li>
+                        <img src="./resources/hobbies_icon.png" alt="Hobbies Icon"/>
+                        <p>In my free time I enjoy hiking, writing music, solving Rubik's cubes, and playing sports.</p>
+                    </li>
                 </ul>
-                <a id="resume" href="#">Full Resume</a>
+                <a id="resume" href="./resources/Resume.pdf">Full Resume</a>
             </div>
 
             <div id="experience" class="section">
@@ -53,14 +88,23 @@
             <div id="links" class="section">
                 <h1>Links & Contact</h1>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/devin-arena/">LinkedIn</a></li>
-                    <li><a href="https://github.com/devinarena">GitHub</a></li>
-                    <li><a href="mailto:devinarena03@gmail.com">Email</a></li>
+                    <li><a href="https://www.linkedin.com/in/devin-arena/"><img src="./resources/linkedin_icon.png" alt="LinkedIn Icon"/>LinkedIn</a></li>
+                    <li><a href="https://github.com/devinarena"><img src="./resources/github_icon.png" alt="GitHub Icon"/>GitHub</a></li>
+                    <li><a href="mailto:devinarena03@gmail.com"><img src="./resources/email_icon.png" alt="Email Icon"/>Email</a></li>
                 </ul>
             </div>
 
             <div id="footer">
                 <p>&copy; 2025 Devin Arena</p>
+                <p id="icon-attributions">Icon Attributions: 
+                    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icon - riajulislam - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icon - created by riajulislam - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icon - created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/about" title="about icons">About icons created by Anggara - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/education" title="education icons">Education icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/lifestyle" title="lifestyle icons">Lifestyle icons created by Freepik - Flaticon</a>
+                </p>
             </div>
         </div>
     </main>
