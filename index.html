@@ -9,6 +9,7 @@
     <main>
         <div id="background">
             <div id="sky"></div>
+            <div id="terrainGlow"></div>
             <div id="terrain"></div>
             <div id="stars-1">
                 <div class="star"></div>
@@ -36,6 +37,7 @@
                 <li><a href="#summary">Summary</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#links">Links & Contact</a></li>
+                <li><a href="#" onclick="showColorPicker()">Change Color</a></li>
             </ul>
         </div>
         <div id="content">
@@ -105,6 +107,7 @@
                     <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/lifestyle" title="lifestyle icons">Lifestyle icons created by Freepik - Flaticon</a>
                 </p>
+                <input type="color" style="display:none" id="colorPicker" onchange="updateColor(this.value)" />
             </div>
         </div>
     </main>
