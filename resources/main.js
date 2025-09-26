@@ -9,6 +9,17 @@ const updateQuickLinksVisibility = () => {
     }
 };
 
+const showColorPicker = () => {
+    document.querySelector("#colorPicker").click();
+}
+
+const updateColor = (color) => {
+    document.body.style.setProperty("--link-color", color);
+    document.body.style.setProperty("--link-color-hover", `color-mix(in srgb, ${color} 70%, white)`);
+    document.body.style.setProperty("--bg-color", `color-mix(in srgb, ${color} 5%, black)`);
+    localStorage.setItem("linkColor", color);
+}
+
 window.onload = () => {
     for (const star of document.querySelectorAll(".star")) {
         console.log(star);
@@ -24,6 +35,10 @@ window.onload = () => {
             box-shadow: 0 0 ${size}px ${size}px white;
             animation: twinkle ${Math.random() * 2 + 0.8}s infinite;
         `;
+    }
+    const savedColor = localStorage.getItem("linkColor");
+    if (savedColor) {
+        updateColor(savedColor);
     }
 }
 
