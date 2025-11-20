@@ -42,7 +42,7 @@
         </div>
         <div id="content">
             <div id="summary" class="section">
-                <img src="./resources/me.jpg" alt="Devin Arena">
+                <img src="./resources/me-8-bit.png" alt="Devin Arena">
                 <h1>Devin Arena</h1>
                 <h3>Software Engineer</h3>
                 <ul>
@@ -70,9 +70,9 @@
                 <h1>Experience</h1>
                 <ul>
                     <li>
-                        <span><h3>Software Engineer Intern</h3><h5>January 2022 - May 2022</h5></span>
-                        <h4>SRC, inc.</h4>
-                        <p>Worked as an intern for SRC, inc. migrating a buildsystem accross major versions and updated various python projects from Python2 to Python3.</p>
+                        <span><h3>Software Engineer II</h3><h5>February 2025  - Present</h5></span>
+                        <h4>Mastercard</h4>
+                        <p>Worked on various Java Microservices projects related to Mastercard's payment processing and tokenization teams.</p>
                     </li>
                     <li>
                         <span><h3>Software Engineer I</h3><h5>May 2023 - February 2025</h5></span>
@@ -80,10 +80,17 @@
                         <p>Participated in a College New-Hire program, working on various projects and joining a payment processing team.</p>
                     </li>
                     <li>
-                        <span><h3>Software Engineer II</h3><h5>February 2025  - Present</h5></span>
-                        <h4>Mastercard</h4>
-                        <p>Worked on various Java Microservices projects related to Mastercard's payment processing and tokenization teams.</p>
+                        <span><h3>Software Engineer Intern</h3><h5>January 2022 - May 2022</h5></span>
+                        <h4>SRC, inc.</h4>
+                        <p>Worked as an intern for SRC, inc. migrating a buildsystem accross major versions and updated various python projects from Python2 to Python3.</p>
                     </li>
+                </ul>
+            </div>
+
+            <div id="projects" class="section">
+                <h1>Projects</h1>
+                <ul>
+                    <li><button type="button" onclick="openProject('roux-solver')">Roux Solver</a></li>
                 </ul>
             </div>
 
@@ -94,6 +101,17 @@
                     <li><a href="https://github.com/devinarena"><img src="./resources/github_icon.png" alt="GitHub Icon"/>GitHub</a></li>
                     <li><a href="mailto:devinarena03@gmail.com"><img src="./resources/email_icon.png" alt="Email Icon"/>Email</a></li>
                 </ul>
+            </div>
+            
+            <div class="project-section roux-solver" style="opacity: 0.0; display: none;">
+                <h1>Roux Solver</h1>
+                <img src="./resources/roux_solver.png" alt="Project Image"/>
+                <p>Roux Solver is an interactive web app that teaches users how to solve a scrambled cube using the Roux method. Built with Three.js, it renders a smooth, animated 3D cube directly in the browser. Users can enter their own scramble or generate a random one, then follow step-by-step Roux method instructions tailored to the scramble. The app includes multiple speed settings for animations and solution playback.</p>
+                <div class="project-links">
+                    <a href="https://devinarena.com/RouxSolver/">Project Link</a>
+                    <a href="https://github.com/devinarena/RouxSolver">Project Source</a>
+                    <button type="button" onclick="closeProject()">Back</button>
+                </div>
             </div>
 
             <div id="footer">
