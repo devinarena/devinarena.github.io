@@ -34,10 +34,10 @@
         <div id="navbar">
             <h1><a href="#" onclick="updateQuickLinksVisibility()"><span>Navigation</span><div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div></a></h1>
             <ul>
-                <li><a href="#summary">Summary</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#links">Links & Contact</a></li>
-                <li><a href="#" onclick="showColorPicker()">Change Color</a></li>
+                <li><h5><a href="#summary">Summary</a></h5></li>
+                <li><h5><a href="#experience">Experience</a></h5></li>
+                <li><h5><a href="#links">Links & Contact</a></h5></li>
+                <li><h5><a href="#" onclick="showColorPicker()">Change Color</a></h5></li>
             </ul>
         </div>
         <div id="content">
@@ -67,7 +67,7 @@
             </div>
 
             <div id="experience" class="section">
-                <h1>Experience</h1>
+                <h2>Experience</h2>
                 <ul>
                     <li>
                         <span><h3>Software Engineer II</h3><h5>February 2025  - Present</h5></span>
@@ -88,29 +88,29 @@
             </div>
 
             <div id="projects" class="section">
-                <h1>Projects</h1>
+                <h2>Projects</h2>
                 <ul>
                     <li><button type="button" onclick="openProject('roux-solver')">Roux Solver</a></li>
                 </ul>
             </div>
 
             <div id="links" class="section">
-                <h1>Links & Contact</h1>
+                <h2>Links & Contact</h2>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/devin-arena/"><img src="./resources/linkedin_icon.png" alt="LinkedIn Icon"/>LinkedIn</a></li>
-                    <li><a href="https://github.com/devinarena"><img src="./resources/github_icon.png" alt="GitHub Icon"/>GitHub</a></li>
-                    <li><a href="mailto:devinarena03@gmail.com"><img src="./resources/email_icon.png" alt="Email Icon"/>Email</a></li>
+                    <li><h5><a href="https://www.linkedin.com/in/devin-arena/"><img src="./resources/linkedin_icon.png" alt="LinkedIn Icon"/>LinkedIn</a></h5></li>
+                    <li><h5><a href="https://github.com/devinarena"><img src="./resources/github_icon.png" alt="GitHub Icon"/>GitHub</a></h5></li>
+                    <li><h5><a href="mailto:devinarena03@gmail.com"><img src="./resources/email_icon.png" alt="Email Icon"/>Email</a></h5></li>
                 </ul>
             </div>
             
             <div class="project-section roux-solver" style="opacity: 0.0; display: none;">
-                <h1>Roux Solver</h1>
+                <h2>Roux Solver</h2>
                 <img src="./resources/roux_solver.png" alt="Project Image"/>
                 <p>Roux Solver is an interactive web app that teaches users how to solve a scrambled cube using the Roux method. Built with Three.js, it renders a smooth, animated 3D cube directly in the browser. Users can enter their own scramble or generate a random one, then follow step-by-step Roux method instructions tailored to the scramble. The app includes multiple speed settings for animations and solution playback.</p>
                 <div class="project-links">
-                    <a href="https://devinarena.com/RouxSolver/">Project Link</a>
-                    <a href="https://github.com/devinarena/RouxSolver">Project Source</a>
-                    <button type="button" onclick="closeProject()">Back</button>
+                    <h5><a href="https://devinarena.com/RouxSolver/">Project Link</a></h5>
+                    <h5><a href="https://github.com/devinarena/RouxSolver">Project Source</a></h5>
+                    <h5><a href="#" onclick="closeProject()">Back</a></h5>
                 </div>
             </div>
 
