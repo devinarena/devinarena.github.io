@@ -84,6 +84,30 @@ main {
     animation-delay: -40s;
 }
 
+h1 {
+    font-size: clamp(2rem, 20px + 2.5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(2rem, 18px + 2.25vw, 3.5rem);
+}
+
+h3 {
+    font-size: clamp(1.5rem, 16px + 1.75vw, 3rem);
+}
+
+h4 {
+    font-size: clamp(1rem, 14px + 1.5vw, 2rem);
+}
+
+h5 {
+    font-size: clamp(0.75rem, 12px + 1.25vw, 1.5rem);
+}
+
+p {
+    font-size: clamp(0.75rem, 12px + 1.25vw, 1.5rem);
+}
+
 #navbar {
     width: 20%;
     height: 100vh;
@@ -103,7 +127,6 @@ main {
 #navbar h1 a {
     text-decoration: none;
     color: var(--font-color);
-    font-size: 3rem;
     transition: color 0.4s ease;
 }
 
@@ -130,7 +153,6 @@ main {
 #navbar ul li a {
     text-decoration: none;
     color: var(--link-color);
-    font-size: 2rem;
     transition: color 0.4s ease;
 }
 
@@ -177,12 +199,10 @@ main {
 }
 
 #summary h1 {
-    font-size: clamp(3rem, 6vw, 5rem);
     margin: 5px 0;
 }
 
 #summary h3 {
-    font-size: clamp(2.5rem, 4.5vw, 3rem);
     margin: 5px 0;
 }
 
@@ -203,7 +223,6 @@ main {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    font-size: clamp(1.25rem, 1.5vw, 2rem);
     text-align: center;
 }
 
@@ -224,7 +243,6 @@ main {
     background-color: var(--link-color);
     padding: 10px 20px;
     border-radius: 5px;
-    font-size: clamp(2rem, 3.5vw, 2.5rem);
     transition: background-color 0.4s ease, box-shadow 0.4s ease;
 }
 
@@ -235,7 +253,6 @@ main {
 }
 
 #experience h1, #links h1, #projects h1 {
-    font-size: clamp(2.5rem, 5vw, 3.5rem);
     text-decoration: underline;
 }
 
@@ -251,16 +268,7 @@ main {
     border-radius: 5px;
 }
 
-#experience ul li h3 {
-    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-}
-
-#experience ul li h4 {
-    font-size: clamp(1.25rem, 2vw, 2rem);
-}
-
 #experience ul li h5 {
-    font-size: clamp(1rem, 1.75vw, 1.75rem);
     font-style: italic;
 }
 
@@ -280,10 +288,6 @@ main {
     text-align: right;
 }
 
-#experience ul li p {
-    font-size: clamp(1rem, 1.5vw, 1.5rem);
-}
-
 #links {
     display: flex;
     flex-direction: column;
@@ -298,7 +302,6 @@ main {
 #links ul li a {
     text-decoration: none;
     color: var(--link-color);
-    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
     background-color: rgba(0, 0, 0, 0.1);
     transition: color 0.4s ease, background-color 0.4s ease;
     display: flex;
@@ -335,7 +338,7 @@ main {
     outline: none;
     border: none;
     color: var(--link-color);
-    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+    font-size: clamp(0.75rem, 10px + 1.5vw, 1.5rem);
     background-color: rgba(0, 0, 0, 0.1);
     transition: color 0.4s ease, background-color 0.4s ease;
     display: flex;
@@ -375,6 +378,7 @@ main {
 
 .project-section {
     margin-top: 24px;
+    margin-bottom: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -382,12 +386,7 @@ main {
     transition: opacity 3s ease;
 }
 
-.project-section h1 {
-    font-size: clamp(3rem, 6vw, 4rem);
-}
-
 .project-section p {
-    font-size: clamp(1rem, 2vw, 2rem);
     max-width: 80%;
     margin: 10px 0px;
 }
@@ -402,27 +401,31 @@ main {
 .project-links {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     justify-content: center;
-    width: 50%;
 }
 
-.project-links a {
-    font-size: clamp(1rem, 2vw, 2rem);
+.project-links h5 {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.project-links h5 a {
     color: var(--link-color);
     text-decoration: none;
     transition: color 0.4s ease, background 0.4s ease;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
+    width: 100%;
 }
 
-.project-links a:hover {
+.project-links h5 a:hover {
     color: var(--link-color-hover);
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-.project-links button {
+.project-links h5 button {
     outline: none;
     border: none;
     font-size: clamp(1rem, 2vw, 2rem);
@@ -431,11 +434,11 @@ main {
     transition: color 0.4s ease, background 0.4s ease;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
-    text-align: center;
     cursor: hand;
+    width: 100%;
 }
 
-.project-links button:hover {
+.project-links h5 button:hover {
     color: var(--link-color-hover);
     background-color: rgba(0, 0, 0, 0.9);
 }
@@ -450,7 +453,6 @@ main {
     }
 
     #navbar h1 a {
-        font-size: clamp(3rem, 7vw, 7rem);
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -483,7 +485,6 @@ main {
     }
 
     #navbar ul li a {
-        font-size: clamp(1.5rem, 4vw, 2rem);
     }
 
     #content {
@@ -501,14 +502,6 @@ main {
         flex-direction: column;
         align-items: center;
     }
-    
-    #summary h1 {
-        font-size: clamp(3rem, 8vw, 5rem);
-    }
-
-    #summary h3 {
-        font-size: clamp(2rem, 6vw, 3rem);
-    }
 
     #summary ul li {
         margin: 10px 0;
@@ -525,10 +518,6 @@ main {
         margin-right: 20px;
     }
 
-    #summary ul li p {
-        font-size: clamp(1rem, 3vw, 1.5rem);
-    }
-
     #summary > img {
         margin-top: 10%;
         width: clamp(300px, 40vw, 400px);
@@ -541,7 +530,6 @@ main {
 
     #experience h1, #links h1, #projects h1 {
         margin-top: 10%;
-        font-size: clamp(2rem, 6vw, 3.5rem);
     }
 
     #experience ul li span {
@@ -550,24 +538,7 @@ main {
         text-align: left;
     }
 
-    #experience ul li h3 {
-        font-size: clamp(1.25rem, 3vw, 2rem);
-    }
-
-    #experience ul li h4 {
-        font-size: clamp(1rem, 2.5vw, 1.75rem);
-    }
-
-    #experience ul li h5 {
-        font-size: clamp(1rem, 2vw, 1.5rem);
-    }
-
-    #experience ul li p {
-        font-size: clamp(1rem, 2vw, 1.5rem);
-    }
-
     #links ul li a {
-        font-size: clamp(1.25rem, 3vw, 2.5rem);
     }
 
     #links ul li a img {
@@ -577,7 +548,6 @@ main {
 
     #footer p {
         text-align: center;
-        font-size: clamp(1.5rem, 2.5vw, 2rem);
     }
 
     #icon-attributions {
@@ -588,12 +558,12 @@ main {
         margin-top: 10%;
     }
 
-    .project-section p {
-        font-size: clamp(1.5rem, 2vw, 2.5rem);
-    }
-
     .project-links {
         margin-top: 20px;
+    }
+
+    .project-links h5 {
+        margin: 10px 0;
     }
 }
 
