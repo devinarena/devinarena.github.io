@@ -32,7 +32,7 @@
             </div>
         </div>
         <div id="navbar">
-            <h1><a href="#" onclick="updateQuickLinksVisibility()"><span>Navigation</span><div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div></a></h1>
+            <h2><a href="#" onclick="updateQuickLinksVisibility()"><span>Navigation</span><div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div></a></h2>
             <ul>
                 <li><h5><a href="#summary">Summary</a></h5></li>
                 <li><h5><a href="#experience">Experience</a></h5></li>
@@ -86,12 +86,32 @@
                     </li>
                 </ul>
             </div>
-
+            
             <div id="projects" class="section">
                 <h2>Projects</h2>
-                <ul>
-                    <li><button type="button" onclick="openProject('roux-solver')">Roux Solver</a></li>
-                </ul>
+                <div class="project-section roux-solver">
+                    <div class="project-header">
+                        <h3>Roux Solver</h3>
+                        <button><img class="toggle-button" src="./resources/expand_icon.png" alt="Button Icon" onclick="toggleProject('roux-solver')"></button>
+                    </div>
+                    <img src="./resources/roux_solver.png" alt="Project Image"/>
+                    <p>Roux Solver is an interactive web app that teaches users how to solve a scrambled cube using the Roux method. Built with Three.js, it renders a smooth, animated 3D cube directly in the browser. Users can enter their own scramble or generate a random one, then follow step-by-step Roux method instructions tailored to the scramble. The app includes multiple speed settings for animations and solution playback.</p>
+                    <div class="project-links">
+                        <h5><a href="https://devinarena.com/RouxSolver/">Project Link</a></h5>
+                        <h5><a href="https://github.com/devinarena/RouxSolver">Project Source</a></h5>
+                    </div>
+                </div>
+                <div class="project-section palladium">
+                    <div class="project-header">
+                        <h3>Palladium</h3>
+                        <button><img class="toggle-button" src="./resources/expand_icon.png" alt="Button Icon" onclick="toggleProject('palladium')"></button>
+                    </div>
+                    <img src="./resources/palladium.png" alt="Project Image"/>
+                    <p>Palladium is a hobby programming language developed in Rust featuring a clean, Python-inspired syntax with a focus on readability and developer ergonomics. The language compiles and transpiles into Java, allowing programs to run on the JVM while abstracting away much of Java’s verbosity. This project involved building a lexer, parser, and abstract syntax tree (AST), along with code generation targeting Java, and provided hands-on experience in language design, compiler construction, and JVM-oriented tooling.</p>
+                    <div class="project-links">
+                        <h5><a href="https://github.com/devinarena/Palladium">Project Source</a></h5>
+                    </div>
+                </div>
             </div>
 
             <div id="links" class="section">
@@ -101,17 +121,6 @@
                     <li><h5><a href="https://github.com/devinarena"><img src="./resources/github_icon.png" alt="GitHub Icon"/>GitHub</a></h5></li>
                     <li><h5><a href="mailto:devinarena03@gmail.com"><img src="./resources/email_icon.png" alt="Email Icon"/>Email</a></h5></li>
                 </ul>
-            </div>
-            
-            <div class="project-section roux-solver" style="opacity: 0.0; display: none;">
-                <h2>Roux Solver</h2>
-                <img src="./resources/roux_solver.png" alt="Project Image"/>
-                <p>Roux Solver is an interactive web app that teaches users how to solve a scrambled cube using the Roux method. Built with Three.js, it renders a smooth, animated 3D cube directly in the browser. Users can enter their own scramble or generate a random one, then follow step-by-step Roux method instructions tailored to the scramble. The app includes multiple speed settings for animations and solution playback.</p>
-                <div class="project-links">
-                    <h5><a href="https://devinarena.com/RouxSolver/">Project Link</a></h5>
-                    <h5><a href="https://github.com/devinarena/RouxSolver">Project Source</a></h5>
-                    <h5><a href="#" onclick="closeProject()">Back</a></h5>
-                </div>
             </div>
 
             <div id="footer">
@@ -124,6 +133,8 @@
                     <a href="https://www.flaticon.com/free-icons/education" title="education icons">Education icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
                     <a href="https://www.flaticon.com/free-icons/lifestyle" title="lifestyle icons">Lifestyle icons created by Freepik - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/expand" title="expand icons">Expand icons created by Smashicons - Flaticon</a>
+                    <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by ariefstudio - Flaticon</a>
                 </p>
                 <input type="color" style="display:none" id="colorPicker" onchange="updateColor(this.value)" />
             </div>
