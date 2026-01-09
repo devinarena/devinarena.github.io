@@ -56,3 +56,10 @@ window.onload = () => {
         section.style.maxHeight = `${section.querySelector(".project-header h3").offsetHeight + 12}px`;
     });
 }
+
+window.onscroll = () => {
+    for (const section of document.querySelectorAll(".section")) {
+        section.style.opacity = Math.min(1, Math.max(0, (window.scrollY + window.innerHeight - section.offsetTop - 100) / (window.innerHeight / 2)));
+        section.style.transform = `translateX(${(section.style.opacity-1) * 100}px)`;
+    }
+};
