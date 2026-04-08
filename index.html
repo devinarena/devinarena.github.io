@@ -1,145 +1,105 @@
-<html>
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Devin Arena</title>
-    <link rel="stylesheet" type="text/css" href="./resources/styles.css">
-    <script type="text/javascript" src="./resources/main.js" defer></script>
-</head>
-
-<body>
-    <main>
-        <div id="background">
-            <div id="sky"></div>
-            <div id="terrainGlow"></div>
-            <div id="terrain"></div>
-            <div id="stars-1">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-            </div>
-            <div id="stars-2">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-            </div>
-            <div id="stars-3">
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
-                <div class="star"></div>
+    <link rel="stylesheet" href="./resources/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+    <main class="d-flex flex-column bg-light" style="width: 100%; min-height: 100vh;">
+        <div class="container my-5 d-flex flex-column flex-md-row align-items-center justify-content-center">
+            <img src="./resources/me-8-bit.png" alt="Devin Arena" class="rounded-circle img-thumbnail flex-shrink-0 object-fit-cover me-md-5 border-1" style="width: 300px; height: 300px;">
+            <div class="ms-md-5 mx-2 mx-md-0 flex-fill">
+                <h1 class="text-center">Devin Arena</h1>
+                <p class="lead text-center">Software Engineer</p>
+                <p>I am a 25 year old software engineer based in St. Louis, Missouri. Most of my professional experience is in developing scalable microservices using Java and Spring.</p>
+                <p>In my free time I like to play around with creating compilers and games. Outside of software development, I enjoy hiking, playing the piano, and reading Sci-Fi and Fantasy novels.</p>
+                <hr />
+                <p><b>Professional Interests</b>: Backend Development, Java, Spring, Microservices, Frontend Development, Javascript, REST, gRPC, Compiler Design, Low-Level Programming</p>
             </div>
         </div>
-        <div id="navbar">
-            <h2><a href="#" onclick="updateQuickLinksVisibility()"><span>Navigation</span><div class="hamburger"></div><div class="hamburger"></div><div class="hamburger"></div></a></h2>
-            <ul>
-                <li><h5><a href="#summary">Summary</a></h5></li>
-                <li><h5><a href="#experience">Experience</a></h5></li>
-                <li><h5><a href="#links">Links & Contact</a></h5></li>
-                <li><h5><a href="#" onclick="showColorPicker()">Change Color</a></h5></li>
-            </ul>
+        <hr class="d-flex mx-auto" style="width: 50%;" />
+        <div class="container d-flex flex-row justify-content-center my-2">
+            <a href="https://www.linkedin.com/in/devin-arena/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2"><i class="bi bi-linkedin" style="font-size: 1.5rem;"></i></a>
+            <a href="https://github.com/devinarena" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2"><i class="bi bi-github" style="font-size: 1.5rem;"></i></a>
+            <a href="mailto:devinarena03@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2"><i class="bi bi-envelope" style="font-size: 1.5rem;"></i></a>
+            <a href="https://twitter.com/devinarena03" target="_blank" rel="noopener noreferrer" class="btn btn-outline-secondary mx-2"><i class="bi bi-twitter" style="font-size: 1.5rem;"></i></a>
         </div>
-        <div id="content">
-            <div id="summary" class="section">
-                <img src="./resources/me-8-bit.png" alt="Devin Arena">
-                <h1>Devin Arena</h1>
-                <h3>Software Engineer</h3>
-                <ul>
-                    <li>
-                        <img src="./resources/about_icon.png" alt="About Icon"/>
-                        <p>I am a 24 year old Software Engineer based in Saint Louis, Missouri.</p>
-                    </li>
-                    <li>
-                        <img src="./resources/education_icon.png" alt="Education Icon"/>
-                        <p>I graduated from Florida Gulf Coast University in 2023 with a B.S. in Software Engineering.</p>
-                    </li>
-                    <li>
-                        <img src="./resources/experience_icon.png" alt="Education Icon"/>
-                        <p>Most of my professional experience is in developing backend microservices using Spring and Java.</p>
-                    </li>
-                    <li>
-                        <img src="./resources/hobbies_icon.png" alt="Hobbies Icon"/>
-                        <p>In my free time I enjoy hiking, writing music, solving Rubik's cubes, and playing sports.</p>
-                    </li>
-                </ul>
-                <a id="resume" href="./resources/Resume.pdf">Full Resume</a>
-            </div>
-
-            <div id="experience" class="section">
-                <h2>Experience</h2>
-                <ul>
-                    <li>
-                        <span><h3>Software Engineer II</h3><h5>February 2025  - Present</h5></span>
-                        <h4>Mastercard</h4>
-                        <p>Worked on various Java Microservices projects related to Mastercard's payment processing and tokenization teams.</p>
-                    </li>
-                    <li>
-                        <span><h3>Software Engineer I</h3><h5>May 2023 - February 2025</h5></span>
-                        <h4>Mastercard</h4>
-                        <p>Participated in a College New-Hire program, working on various projects and joining a payment processing team.</p>
-                    </li>
-                    <li>
-                        <span><h3>Software Engineer Intern</h3><h5>January 2022 - May 2022</h5></span>
-                        <h4>SRC, inc.</h4>
-                        <p>Worked as an intern for SRC, inc. migrating a buildsystem accross major versions and updated various python projects from Python2 to Python3.</p>
-                    </li>
-                </ul>
-            </div>
-            
-            <div id="projects" class="section">
-                <h2>Projects</h2>
-                <div class="project-section roux-solver">
-                    <div class="project-header">
+        <hr class="d-flex mx-auto" style="width: 50%;" />
+        <div class="container my-5">
+            <h1>Projects</h1>
+            <div class="row g-3">
+                <div class="col-md">
+                    <div class="border rounded p-3 h-100 d-flex flex-column bg-white">
                         <h3>Roux Solver</h3>
-                        <button><img class="toggle-button" src="./resources/expand_icon.png" alt="Button Icon" onclick="toggleProject('roux-solver')"></button>
-                    </div>
-                    <img src="./resources/roux_solver.png" alt="Project Image"/>
-                    <p>Roux Solver is an interactive web app that teaches users how to solve a scrambled cube using the Roux method. Built with Three.js, it renders a smooth, animated 3D cube directly in the browser. Users can enter their own scramble or generate a random one, then follow step-by-step Roux method instructions tailored to the scramble. The app includes multiple speed settings for animations and solution playback.</p>
-                    <div class="project-links">
-                        <h5><a href="https://devinarena.com/RouxSolver/">Project Link</a></h5>
-                        <h5><a href="https://github.com/devinarena/RouxSolver">Project Source</a></h5>
+                        <p class="lead">Speedcubing Simulator</p>
+                        <p>Roux Solver is an interactive web app that teaches users how to solve a scrambled cube using the Roux method. Built with Three.js, it renders a smooth, animated 3D cube directly in the browser. Users can enter their own scramble or generate a random one, then follow step-by-step Roux method instructions tailored to the scramble.</p>
+                        <span class="d-flex flex-column justify-content-end">
+                            <a href="https://devinarena.com/RouxSolver" class="btn btn-outline-primary mt-3">Try It</a>
+                            <a href="https://github.com/devinarena/RouxSolver" class="btn btn-outline-primary mt-3">Source Code</a>
+                        </span>
                     </div>
                 </div>
-                <div class="project-section palladium">
-                    <div class="project-header">
+                <div class="col-md">
+                    <div class="border rounded p-3 h-100 d-flex flex-column bg-white">
                         <h3>Palladium</h3>
-                        <button><img class="toggle-button" src="./resources/expand_icon.png" alt="Button Icon" onclick="toggleProject('palladium')"></button>
+                        <p class="lead">Compiler</p>
+                        <p>Palladium is a hobby programming language developed in Rust featuring a clean, Python-inspired syntax with a focus on readability and developer ergonomics. The language compiles and transpiles into Java. This project involved building a lexer, parser, and abstract syntax tree (AST), along with code generation targeting Java, and provided hands-on experience in language design and compiler construction.</p>
+                        <span class="d-flex flex-column justify-content-end">
+                            <a href="https://github.com/devinarena/Palladium" class="btn btn-outline-primary mt-3">Source Code</a>
+                        </span>
                     </div>
-                    <img src="./resources/palladium.png" alt="Project Image"/>
-                    <p>Palladium is a hobby programming language developed in Rust featuring a clean, Python-inspired syntax with a focus on readability and developer ergonomics. The language compiles and transpiles into Java, allowing programs to run on the JVM while abstracting away much of Java’s verbosity. This project involved building a lexer, parser, and abstract syntax tree (AST), along with code generation targeting Java, and provided hands-on experience in language design, compiler construction, and JVM-oriented tooling.</p>
-                    <div class="project-links">
-                        <h5><a href="https://github.com/devinarena/Palladium">Project Source</a></h5>
+                </div>
+
+                <div class="col-md">
+                    <div class="border rounded p-3 h-100 d-flex flex-column bg-white">
+                        <h3>YDKBot</h3>
+                        <p class="lead">Discord Bot</p>
+                        <p>YDKBot is a Discord bot built with discord.js that integrates with the YGOPRODeck API to deliver fast, detailed Yu-Gi-Oh! card and deck information directly in Discord. Users can view full deck lists, search for cards by name, and access detailed stats, descriptions, and pricing data. Key commands include <strong>ydkdeck</strong> (deck lookup), <strong>ydkinfo</strong> (card details), <strong>ydksearch</strong> (card search), and <strong>ydkhelp</strong> (command guide).</p>                    
+                        <span class="d-flex flex-fill flex-column justify-content-end">
+                            <a href="https://github.com/devinarena/YDKBot" class="btn btn-outline-primary mt-3">Source Code</a>
+                        </span>
                     </div>
                 </div>
             </div>
+        </div>
+        <hr class="d-flex mx-auto" style="width: 50%;" />
+        <div class="container my-5">
+            <h1>Experience</h1>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Engineer II <span class="text-muted">— Mastercard</span></h3>
+                        <p class="text-muted">February 2025 — Present</p>
+                        <p>Worked on various Java microservices projects related to payment processing and tokenization, focusing on scalable services and observability improvements.</p>
+                    </div>
+                </div>
 
-            <div id="links" class="section">
-                <h2>Links & Contact</h2>
-                <ul>
-                    <li><h5><a href="https://www.linkedin.com/in/devin-arena/"><img src="./resources/linkedin_icon.png" alt="LinkedIn Icon"/>LinkedIn</a></h5></li>
-                    <li><h5><a href="https://github.com/devinarena"><img src="./resources/github_icon.png" alt="GitHub Icon"/>GitHub</a></h5></li>
-                    <li><h5><a href="mailto:devinarena03@gmail.com"><img src="./resources/email_icon.png" alt="Email Icon"/>Email</a></h5></li>
-                </ul>
-            </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Engineer I <span class="text-muted">— Mastercard</span></h3>
+                        <p class="text-muted">May 2023 — February 2025</p>
+                        <p>Participated in a college new-hire program and contributed to backend services, feature delivery, and CI/CD improvements.</p>
+                    </div>
+                </div>
 
-            <div id="footer">
-                <p>&copy; 2025 Devin Arena</p>
-                <p id="icon-attributions">Icon Attributions: 
-                    <a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icon - riajulislam - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icon - created by riajulislam - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/email" title="email icons">Email icon - created by Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/about" title="about icons">About icons created by Anggara - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/education" title="education icons">Education icons created by Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/work" title="work icons">Work icons created by Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/lifestyle" title="lifestyle icons">Lifestyle icons created by Freepik - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/expand" title="expand icons">Expand icons created by Smashicons - Flaticon</a>
-                    <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by ariefstudio - Flaticon</a>
-                </p>
-                <input type="color" style="display:none" id="colorPicker" onchange="updateColor(this.value)" />
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern <span class="text-muted">— SRC, Inc.</span></h3>
+                        <p class="text-muted">January 2022 — May 2022</p>
+                        <p>Worked on migrating build systems and upgrading Python projects from Python 2 to Python 3.</p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <div class="bg-secondary bg-white p-2 border-top" style="width: 100%">
+            <h5 class="text-center">Copyright 2026 &copy; Devin Arena. Powered by <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">Bootstrap</a>.</h3>
         </div>
     </main>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="./resources/main.js"></script>
+  </body>
 </html>
